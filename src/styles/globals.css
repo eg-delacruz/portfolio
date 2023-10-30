@@ -1,0 +1,75 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Variables */
+:root {
+ /* colors */
+ --light-blue: #2BD3FE;
+ --purple: #751CDB;
+ --dark-black: #1F2233;
+ --light-black: #24283D;
+ --pure-black: #000000;
+ --primary-white: #ffffff;
+ --secondary-white: #F5F5F5;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: var(--roboto), sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--fira), sans-serif;
+  font-weight: 400;
+}
+h1 {
+  font-size: 42px;
+}
+h2 {
+  font-size: 32px;
+}
+h3 {
+  font-size: 26px;
+}
+h4 {
+  font-size: 22px;
+}
+h5 {
+  font-size: 18px;
+}
+h6 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.small_paragraph {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 767px){
+  .container {
+    padding: 0 10px;
+  }
+}
