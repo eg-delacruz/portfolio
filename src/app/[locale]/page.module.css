@@ -1,0 +1,18 @@
+.container {
+
+}
+
+.main {
+}
+/* Select all direct childrens of container */
+.container > * {
+font-size: 200px;
+text-align: center;
+}
+
+
+/* Dark theme  */
+[data-theme="dark"] .container{
+} 
+
+/* MQ  */

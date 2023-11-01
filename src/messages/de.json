@@ -1,0 +1,9 @@
+{
+  "Navigation": {
+    "home": "Startseite",
+    "skills": "Fähigkeiten"
+  },
+  "Page": {
+    "hero": "Hallo, ich bin <span class='highlight'>Rafael</span>.<br> Ich bin ein <span class='highlight'>Software Engineer</span>."
+  }
+}
