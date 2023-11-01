@@ -9,10 +9,10 @@
     display: flex;
     justify-content: space-between;
 }
-.header_container nav, .header_container li {
+.menu, .menu li {
     height: inherit;
 }
-.header_container ul {
+.menu ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,12 +20,12 @@
     height: inherit;
     column-gap: 30px;
 }
-.header_container li {
+.menu li {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.header_container a {
+.menu a {
     text-decoration: none;
     color: var(--primary-white);
     height: 30px;
@@ -34,6 +34,12 @@
     transition: all 0.5s;
     padding: 8px;
 }
-.header_container a:hover {
+.menu a:hover {
     opacity: 0.7;
+}
+.options_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
 }

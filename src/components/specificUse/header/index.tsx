@@ -1,18 +1,20 @@
 'use client';
 import { useEffect } from 'react';
 import { useTranslations } from 'next-intl';
-import Link from 'next/link';
 
 //Styles
 import styles from './styles.module.css';
 
 //Components
 import DarkModeToggler from '@components/specificUse/DarkModeToggler';
+import LanguageSelection from '@components/specificUse/LanguageSelection/LanguageSelection';
 
 //Types
-type Props = {};
+type Props = {
+  locale: string;
+};
 
-const Header = () => {
+const Header = ({ locale }: Props) => {
   //Highlight nav link when section is in viewport
   useEffect(() => {
     const sections = document.querySelectorAll('.section');
@@ -61,25 +63,23 @@ const Header = () => {
                 <a href='#skills'>{t(`Navigation.skills`)}</a>
               </li>
               <li className={styles.menu_item}>
-                <a href='#projects'>Projects</a>
+                <a href='#projects'>{t(`Navigation.projects`)}</a>
               </li>
               <li className={styles.menu_item}>
-                <a href='#languages'>Languages</a>
+                <a href='#languages'>{t(`Navigation.languages`)}</a>
               </li>
               <li className={styles.menu_item}>
-                <a href='#certificates'>Certificates</a>
+                <a href='#certificates'>{t(`Navigation.certificates`)}</a>
               </li>
               <li className={styles.menu_item}>
-                <a href='#hobbies'>Hobbies</a>
+                <a href='#hobbies'>{t(`Navigation.hobbies`)}</a>
               </li>
             </ul>
           </nav>
 
-          <div className={styles.buttons_container}>
+          <div className={styles.options_container}>
             <DarkModeToggler />
-            <div>
-              <Link href={'/es'}>Change lang</Link>
-            </div>
+            <LanguageSelection locale={locale} />
           </div>
         </div>
       </header>

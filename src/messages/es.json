@@ -1,9 +1,18 @@
 {
   "Navigation": {
     "home": "Inicio",
-    "skills": "Habilidades"
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "languages": "Idiomas",
+    "certificates": "Certificados",
+    "hobbies": "Hobbies",
+    "web_lang": "🇪🇸"
   },
   "Page": {
+    "meta_data": {
+      "title": "Gerardo De La Cruz",
+      "description": "Portafolio de Gerardo De La Cruz"
+    },
     "hero": "Hola, soy <span class='highlight'>Rafael</span>.<br> Soy un <span class='highlight'>Ingeniero de Software</span>."
   }
 }

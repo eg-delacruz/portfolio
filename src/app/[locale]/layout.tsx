@@ -50,7 +50,7 @@ export default async function RootLayout({
       <Providers>
         <body className={`${roboto.variable} ${fira.variable}`}>
           <NextIntlClientProvider locale={locale} messages={messages}>
-            <Header />
+            <Header locale={locale} />
             {children}
             <footer>Footer</footer>
           </NextIntlClientProvider>

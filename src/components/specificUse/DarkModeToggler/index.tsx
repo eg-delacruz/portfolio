@@ -27,7 +27,7 @@ const DarkModeToggler = () => {
   if (!mounted) return null;
 
   return (
-    <div>
+    <div className={styles.container}>
       <input
         className={styles.input}
         type='checkbox'
