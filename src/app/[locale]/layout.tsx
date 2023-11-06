@@ -10,7 +10,7 @@ import '@styles/globals.css';
 
 //Components
 import Providers from '@components/generalUse/providers';
-import Header from '@components/specificUse/header';
+import Header from '@/components/specificUse/header';
 
 //Types
 //imported

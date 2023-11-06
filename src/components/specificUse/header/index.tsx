@@ -1,5 +1,5 @@
 'use client';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useTranslations } from 'next-intl';
 
 //Styles
@@ -14,12 +14,17 @@ type Props = {
   locale: string;
 };
 
+//TODO: ver si aplicar colores distintos para el tema claro
 const Header = ({ locale }: Props) => {
-  //Highlight nav link when section is in viewport
+  //States
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+
+  //Highlight nav link when section is in viewport (only when screen is big)
   useEffect(() => {
     const sections = document.querySelectorAll('.section');
     const navLinks = document.querySelectorAll('header nav ul li a');
 
+    //Avoid highlighting nav links when screen is small
     if (window.innerWidth < 767) return;
 
     window.onscroll = () => {
@@ -48,11 +53,33 @@ const Header = ({ locale }: Props) => {
     };
   }, []);
 
+  //Translations
   const t = useTranslations();
+
+  //Functions
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenuWhenHeaderClicked = () => {
+    setIsMenuOpen(false);
+  };
 
   return (
     <>
-      <header className={styles.header}>
+      {/* Burger button (767 screen) */}
+      <i onClick={() => toggleMenu()} className={styles.burger_button}>
+        <div className={styles.burger_button_line} />
+        <div
+          className={` ${styles.burger_button_line} ${styles.burger_button_line2}`}
+        />
+        <div className={styles.burger_button_line} />
+      </i>
+
+      <header
+        onClick={() => closeMenuWhenHeaderClicked()}
+        className={`${styles.header} ${isMenuOpen ? styles.header_open : ''}`}
+      >
         <div className={`${styles.header_container} container`}>
           <nav className={`${styles.menu}`}>
             <ul className={styles.menu_list}>
@@ -77,14 +104,19 @@ const Header = ({ locale }: Props) => {
             </ul>
           </nav>
 
-          <div className={styles.options_container}>
+          <div
+            onClick={(e) => {
+              e.stopPropagation();
+            }}
+            className={styles.options_container}
+          >
             <DarkModeToggler />
             <LanguageSelection locale={locale} />
           </div>
         </div>
       </header>
       {/* Avoidin overlap. Height has to match header height */}
-      <div style={{ height: 70 }}></div>
+      <div className={styles.avoid_overlap_div}></div>
     </>
   );
 };
