@@ -11,8 +11,13 @@
   "Page": {
     "meta_data": {
       "title": "Gerardo De La Cruz",
+      "meta_name": "Beschreibung",
       "description": "Gerardo De La Cruzs portfolio"
     },
-    "hero": "Hallo, ich bin <span class='highlight'>Rafael</span>.<br> Ich bin ein <span class='highlight'>Software Engineer</span>."
+    "hero": {
+      "quote_strong": "Höre nie auf zu lernen",
+      "quote_rest": " - Schlüsselhaltung in einem sich heutzutage schnell verändernden Umfeld",
+      "description": "Meine internationalen Kenntnisse, mein breites Sprachwissen und mein erstaunlicher Einsatz führen mich zu erstaunlichen Ergebnissen ..."
+    }
   }
 }
