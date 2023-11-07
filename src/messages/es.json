@@ -18,6 +18,58 @@
       "quote_strong": "Nunca parar de aprender",
       "quote_rest": " - Actitud clave en los entornos rápidamente cambiantes de hoy en día.",
       "description": "Mi dominio internacional, mi amplia experiencia lingüística y mi asombrosa dedicación combinadas me llevan a resultados sorprendentes..."
+    },
+    "skills": {
+      "title": "Habilidades",
+      "database": "Bases de datos",
+      "design": "Diseño"
+    },
+    "projects": {
+      "title": "Proyectos",
+      "code_btn": "Código",
+      "site_btn": "Web",
+      "projects_info": {
+        "project_1": {
+          "title": "Campus Canvas",
+          "description": "Plataforma que ofrece descuentos a estudiantes universitarios. Cuenta con login, verificación de estudiantes, gestión administrativa para publicación y control de descuentos en base de datos y gestión de blog."
+        },
+        "project_2": {
+          "title": "Petgram",
+          "description": "Descripción de Petgram"
+        }
+      }
+    },
+    "languages": {
+      "title": "Idiomas",
+      "spanish": "Español",
+      "spanish_level": "Nativo",
+      "english": "Inglés",
+      "german": "Alemán"
+    },
+    "certificates": {
+      "title": "Certificados",
+      "category1": "Categoría 1",
+      "category2": "Categoría 2",
+      "category3": "Categoría 3",
+      "issued_by": "Emitido por",
+      "date": "Fecha",
+      "show_credentials": "Mostrar credenciales",
+      "certificates_info": {
+        "certificate_1": {
+          "title": "Título 1",
+          "date": "5 Agosto 2020"
+        },
+        "certificate_2": {
+          "title": "Título 2",
+          "date": "5 Agosto 2020"
+        }
+      }
+    },
+    "hobbies": {
+      "title": "Hobbies"
+    },
+    "footer": {
+      "description": "Diseñado y desarrollado por Gerardo De La Cruz"
     }
   }
 }

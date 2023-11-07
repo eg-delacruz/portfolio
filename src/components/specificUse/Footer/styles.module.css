@@ -1,0 +1,19 @@
+.footer {
+  background: linear-gradient(to right, var(--light-blue), var(--purple));
+}
+.footer_container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer p {
+  line-height: 30px;
+  color: var(--primary-white);
+}
+
+@media screen and (max-width: 767px) {
+  .footer_container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}

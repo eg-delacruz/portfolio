@@ -10,7 +10,8 @@ import '@styles/globals.css';
 
 //Components
 import Providers from '@components/generalUse/providers';
-import Header from '@/components/specificUse/header';
+import Header from '@/components/specificUse/Header';
+import Footer from '@/components/specificUse/Footer';
 
 //Types
 //imported
@@ -52,7 +53,7 @@ export default async function RootLayout({
           <NextIntlClientProvider locale={locale} messages={messages}>
             <Header locale={locale} />
             {children}
-            <footer>Footer</footer>
+            <Footer />
           </NextIntlClientProvider>
         </body>
       </Providers>

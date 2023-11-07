@@ -18,6 +18,58 @@
       "quote_strong": "Never stop learning",
       "quote_rest": "- key attitude in nowadays rapidly changing environments",
       "description": "My international proficiency, wide language expertise and astonishing dedication combined lead me to amazing outcomes..."
+    },
+    "skills": {
+      "title": "Skills",
+      "database": "Database",
+      "design": "Design"
+    },
+    "projects": {
+      "title": "Projects",
+      "code_btn": "Code",
+      "site_btn": "Site",
+      "projects_info": {
+        "project_1": {
+          "title": "Campus Canvas",
+          "description": "Platform that offers discounts to university students. It has login, student verification, administrative management for publication and control of discounts in the database and blog management."
+        },
+        "project_2": {
+          "title": "Petgram",
+          "description": "Petgram description"
+        }
+      }
+    },
+    "languages": {
+      "title": "Languages",
+      "spanish": "Spanish",
+      "spanish_level": "Native",
+      "english": "English",
+      "german": "German"
+    },
+    "certificates": {
+      "title": "Certificates",
+      "category1": "category1",
+      "category2": "category2",
+      "category3": "category3",
+      "issued_by": "Issued by",
+      "date": "Date",
+      "show_credentials": "Show credentials",
+      "certificates_info": {
+        "certificate_1": {
+          "title": "Title 1",
+          "date": "5 August 2020"
+        },
+        "certificate_2": {
+          "title": "Title 2",
+          "date": "5 August 2020"
+        }
+      }
+    },
+    "hobbies": {
+      "title": "Hobbies"
+    },
+    "footer": {
+      "description": "Designed and coded by Gerardo De La Cruz"
     }
   }
 }
