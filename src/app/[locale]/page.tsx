@@ -44,11 +44,18 @@ import xd_icon from '@assets/icons/skills/xd.svg';
 
 import projects_icon from '@assets/icons/portfolio_icon.svg';
 import campuscanvas_web from '@assets/images/campuscanvas_web.png';
-import campuscanvas_web2 from '@assets/images/campuscanvas_web_2.png';
 
 import languages_icon from '@assets/icons/world_icon.svg';
 import certificates_icon from '@assets/icons/pad_pen_icon.svg';
+
 import hobbies_icon from '@assets/icons//video_controller_icon.svg';
+import code_icon from '@assets/icons/hobbies/code_icon.svg';
+import bicicle_icon from '@assets/icons/hobbies/bicicle_icon.svg';
+import padel_icon from '@assets/icons/hobbies/padel_icon.svg';
+import videogames_icon from '@assets/icons/hobbies/videogames_icon.svg';
+import skateboard_icon from '@assets/icons/hobbies/skateboard_icon.svg';
+import badminton_icon from '@assets/icons/hobbies/badminton_icon.svg';
+import music_icon from '@assets/icons/hobbies/music_icon.svg';
 
 //Types
 //imported
@@ -108,7 +115,7 @@ export default function Home() {
               <a href='#'>
                 <Image src={LinkedIn_icon} alt='LinkedIn icon' />
               </a>
-              <a href='#'>
+              <a href='mailto:eg.cruzvalle@gmail.com'>
                 <Image src={Email_icon} alt='Email icon' />
               </a>
             </div>
@@ -327,7 +334,7 @@ export default function Home() {
             >
               <div className={styles.project_image_container}>
                 <Image
-                  src={campuscanvas_web2}
+                  src={campuscanvas_web}
                   alt='Campus Canvas web app'
                   loading='lazy'
                 />
@@ -443,6 +450,16 @@ export default function Home() {
           <div className={styles.title_container}>
             <Image src={hobbies_icon} alt='Skills icon' />
             <h2>{t(`Page.hobbies.title`)}</h2>
+          </div>
+
+          <div className={styles.hobbies_icons}>
+            <Image src={code_icon} alt='Code icon' />
+            <Image src={bicicle_icon} alt='Bicicle icon' />
+            <Image src={padel_icon} alt='Padel icon' />
+            <Image src={videogames_icon} alt='Videogames icon' />
+            <Image src={skateboard_icon} alt='Skateboard icon' />
+            <Image src={badminton_icon} alt='Badminton icon' />
+            <Image src={music_icon} alt='Music icon' />
           </div>
         </div>
       </section>
