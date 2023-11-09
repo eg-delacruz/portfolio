@@ -84,6 +84,15 @@ p {
   border-radius: 5px;
 }
 
+.btn_primary {
+  color: var(--primary-white);
+  background: linear-gradient(to right, var(--light-blue), var(--purple));
+  border-radius: 8px;
+  padding: 8px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 /* Dark theme  */
 [data-theme='dark'] html,
 [data-theme='dark'] body {

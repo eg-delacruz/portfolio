@@ -165,6 +165,53 @@
   filter: drop-shadow(0px 0px 40px rgba(255, 65, 200, 1));
 }
 /* ------------------------------- Projects -------------------------------*/
+.projects_container .project_cards_container {
+  max-width: 530px;
+  margin: 0 auto;
+}
+.projects_container .project_card {
+  background-color: var(--primary-white);
+  border-radius: 5px;
+}
+.projects_container .project_image_container {
+  position: relative;
+  border-radius: 5px 5px 0px 0px;
+  overflow: hidden;
+  background-color: var(--primary-white);
+  height: 240px;
+}
+.projects_container .project_image_container img {
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.projects_container .project_info_details {
+  padding: 16px 8px;
+}
+.projects_container .project_info_details h5 {
+  margin-bottom: 8px;
+}
+.projects_container .project_info_details .buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.projects_container .project_technologies {
+  padding: 4px 8px;
+  background-color: var(--secondary-white);
+  border-radius: 0px 0px 5px 5px;
+}
+
+.projects_container .project_technologies img {
+  margin-right: 8px;
+}
+
+.projects_container .campuscanvas_card {
+  filter: drop-shadow(0px 0px 40px rgba(173, 33, 70, 0.5));
+}
 /* ------------------------------- Languages -------------------------------*/
 /* ----------------------------- Certificates -----------------------------*/
 /* ------------------------------- Hobbies -------------------------------*/
@@ -286,6 +333,14 @@
   background: initial;
 }
 
+[data-theme='dark'] .skills_container .skill_card {
+  filter: none;
+}
 [data-theme='dark'] .skills_container .skill_icon {
   background: initial;
+}
+
+[data-theme='dark'] .projects_container .project_card {
+  color: var(--pure-black);
+  filter: none;
 }
