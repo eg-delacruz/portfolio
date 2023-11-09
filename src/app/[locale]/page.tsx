@@ -393,6 +393,35 @@ export default function Home() {
             <Image src={languages_icon} alt='Skills icon' />
             <h2>{t(`Page.languages.title`)}</h2>
           </div>
+
+          <div className={styles.bars_container}>
+            <div>
+              <h5>{t(`Page.languages.spanish`)}</h5>
+              <div className={styles.bar_container}>
+                <div className={`${styles.bar} ${styles.spanish_bar}`}>
+                  {t(`Page.languages.spanish_level`)}
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h5>{t(`Page.languages.english`)}</h5>
+              <div className={styles.bar_container}>
+                <a href='#' className={`${styles.bar} ${styles.english_bar}`}>
+                  <div>C1</div>
+                </a>
+              </div>
+            </div>
+
+            <div>
+              <h5>{t(`Page.languages.german`)}</h5>
+              <div className={styles.bar_container}>
+                <a href='#' className={`${styles.bar} ${styles.german_bar}`}>
+                  <div>C1</div>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
