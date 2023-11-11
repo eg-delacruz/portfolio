@@ -108,13 +108,16 @@ export default function Home() {
             </p>
 
             <div className={`${styles.buttons} ${styles.bg_blur}`}>
-              <a href='#'>
+              <a href='#' target='_blank'>
                 <Image src={CV_icon} alt='CV icon' />
               </a>
-              <a href='#'>
+              <a href='https://github.com/eg-delacruz' target='_blank'>
                 <Image src={GitHub_icon} alt='GitHub icon' />
               </a>
-              <a href='#'>
+              <a
+                href='https://www.linkedin.com/in/eg-delacruz/'
+                target='_blank'
+              >
                 <Image src={LinkedIn_icon} alt='LinkedIn icon' />
               </a>
               <a href='mailto:eg.cruzvalle@gmail.com'>
@@ -416,7 +419,11 @@ export default function Home() {
             <div>
               <h5>{t(`Page.languages.english`)}</h5>
               <div className={styles.bar_container}>
-                <a href='#' className={`${styles.bar} ${styles.english_bar}`}>
+                <a
+                  href='/certificates/english.pdf'
+                  className={`${styles.bar} ${styles.english_bar}`}
+                  target='_blank'
+                >
                   <div>C1</div>
                 </a>
               </div>
@@ -425,7 +432,11 @@ export default function Home() {
             <div>
               <h5>{t(`Page.languages.german`)}</h5>
               <div className={styles.bar_container}>
-                <a href='#' className={`${styles.bar} ${styles.german_bar}`}>
+                <a
+                  href='/certificates/german.pdf'
+                  className={`${styles.bar} ${styles.german_bar}`}
+                  target='_blank'
+                >
                   <div>C1</div>
                 </a>
               </div>
