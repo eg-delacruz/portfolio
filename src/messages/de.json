@@ -48,20 +48,187 @@
     },
     "certificates": {
       "title": "Zertifikate",
-      "category1": "Kategorie 1",
-      "category2": "Kategorie 2",
-      "category3": "Kategorie 3",
+      "category1": "Front-End",
+      "category2": "Back-End",
+      "category3": "Web Entwicklung",
+      "category4": "Design",
+      "category5": "Andere Zertifikate",
       "issued_by": "Ausgestellt von",
       "date": "Datum",
-      "show_credentials": "Zeige Zertifikate",
       "certificates_info": {
-        "certificate_1": {
-          "title": "Titel 1",
-          "date": "5 August 2020"
+        "frontend": {
+          "certificate_1": {
+            "title": "Professional Next.js Kurs",
+            "date": "11. April 2022"
+          },
+          "certificate_2": {
+            "title": "Next.js: Statische Seiten",
+            "date": "5. Februar 2023"
+          },
+          "certificate_3": {
+            "title": "Next.js: Große Datensätze",
+            "date": "28. März 2023"
+          },
+          "certificate_4": {
+            "title": "Praktischer Next.js Kurs",
+            "date": "26. März 2022"
+          },
+          "certificate_5": {
+            "title": "React.js mit Typescript",
+            "date": "23. September 2023"
+          },
+          "certificate_6": {
+            "title": "React.js Kurs",
+            "date": "29. März 2021"
+          },
+          "certificate_7": {
+            "title": "React.js Kurs 2019",
+            "date": "20. Juli 2021"
+          },
+          "certificate_8": {
+            "title": "React Router und Redux",
+            "date": "16. September 2021"
+          },
+          "certificate_9": {
+            "title": "Redux Kurs",
+            "date": "12. September 2021"
+          },
+          "certificate_10": {
+            "title": "Frontend-Entwickler",
+            "date": "12. Februar 2021"
+          },
+          "certificate_11": {
+            "title": "Online-Webentwicklung",
+            "date": "18. Januar 2019"
+          },
+          "certificate_12": {
+            "title": "HTML- und CSS-Kurs",
+            "date": "6. Dezember 2020"
+          },
+          "certificate_13": {
+            "title": "Definitiver HTML- und CSS-Kurs",
+            "date": "11. Dezember 2020"
+          },
+          "certificate_14": {
+            "title": "Praktischer HTML- und CSS-Kurs",
+            "date": "14. Dezember 2020"
+          },
+          "certificate_15": {
+            "title": "Web-Animationskurs",
+            "date": "2. Juli 2019"
+          },
+          "certificate_16": {
+            "title": "CSS-Layout",
+            "date": "15. Dezember 2020"
+          },
+          "certificate_17": {
+            "title": "Responsive Design",
+            "date": "20. März 2019"
+          },
+          "certificate_18": {
+            "title": "CSS Grid-Layout",
+            "date": "10. April 2019"
+          },
+          "certificate_19": {
+            "title": "CSS-Präprozessoren",
+            "date": "15. Februar 2021"
+          }
         },
-        "certificate_2": {
-          "title": "Titel 2",
-          "date": "5 August 2020"
+        "backend": {
+          "certificate_1": {
+            "title": "Mongo DB und Websockets Datenbank",
+            "date": "21. März 2022"
+          },
+          "certificate_2": {
+            "title": "Datenbankgrundlagen",
+            "date": "8. Dezember 2021"
+          },
+          "certificate_3": {
+            "title": "Node.js Grundlagen",
+            "date": "4. Februar 2022"
+          },
+          "certificate_4": {
+            "title": "Objektorientierte Programmierung",
+            "date": "5. Februar 2021"
+          }
+        },
+        "development": {
+          "certificate_1": {
+            "title": "Git und GitHub Kurs",
+            "date": "30. November 2020"
+          },
+          "certificate_2": {
+            "title": "TypeScript Grundlagen",
+            "date": "14. August 2023"
+          },
+          "certificate_3": {
+            "title": "Fortgeschrittene TypeScript Typen und Funktionen",
+            "date": "21. August 2023"
+          },
+          "certificate_4": {
+            "title": "Professioneller JavaScript Kurs",
+            "date": "14. März 2021"
+          },
+          "certificate_5": {
+            "title": "JavaScript Grundlagen",
+            "date": "20. Januar 2021"
+          },
+          "certificate_6": {
+            "title": "Manipulation von Arrays in JS",
+            "date": "1. Februar 2023"
+          },
+          "certificate_7": {
+            "title": "Asynchrones Programmieren mit JavaScript",
+            "date": "20. Februar 2021"
+          },
+          "certificate_8": {
+            "title": "Ecmascript: JavaScript-Versionen",
+            "date": "17. Februar 2021"
+          },
+          "certificate_9": {
+            "title": "Grundlegendes JavaScript",
+            "date": "22. Dezember 2020"
+          },
+          "certificate_10": {
+            "title": "Grundlagen der Programmierung mit JavaScript",
+            "date": "27. September 2018"
+          },
+          "certificate_11": {
+            "title": "C# Kurs",
+            "date": "3. Juni 2017"
+          }
+        },
+        "design": {
+          "certificate_1": {
+            "title": "Figma: Prototyping und Interfaces",
+            "date": "29. Oktober 2023"
+          },
+          "certificate_2": {
+            "title": "Illustrator",
+            "date": "18. November 2020"
+          },
+          "certificate_3": {
+            "title": "Adobe XD Kurs",
+            "date": "31. Oktober 2020"
+          }
+        },
+        "others": {
+          "certificate_1": {
+            "title": "Google Analytics 4",
+            "date": "16. März 2023"
+          },
+          "certificate_2": {
+            "title": "SAP Seminar",
+            "date": "26. Januar 2018"
+          },
+          "certificate_3": {
+            "title": "Microsoft Dynamics 365 für Finanzen und Betrieb",
+            "date": "21. Januar 2019"
+          },
+          "certificate_4": {
+            "title": "Gründung von Unternehmen und Startups",
+            "date": "6. Februar 2019"
+          }
         }
       }
     },
