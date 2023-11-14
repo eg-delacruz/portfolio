@@ -10,8 +10,8 @@ import '@styles/globals.css';
 
 //Components
 import Providers from '@components/generalUse/providers';
-import Header from '@components/specificUse/Header';
-import Footer from '@components/specificUse/Footer';
+import Header from '@components/specificUse/Header/index';
+import Footer from '@components/specificUse/Footer/index';
 
 //Types
 //imported
