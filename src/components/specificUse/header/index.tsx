@@ -15,7 +15,7 @@ type Props = {
 };
 
 //TODO: ver si aplicar colores distintos para el tema claro
-const Header = ({ locale }: Props) => {
+const Index = ({ locale }: Props) => {
   //States
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
@@ -121,4 +121,4 @@ const Header = ({ locale }: Props) => {
   );
 };
 
-export default Header;
+export default Index;
