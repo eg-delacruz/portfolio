@@ -10,7 +10,7 @@ import '@styles/globals.css';
 
 //Components
 import Providers from '@components/generalUse/providers';
-// import Header from '@/components/specificUse/Header';
+import Header from '@/components/specificUse/Header1';
 import Footer from '@components/specificUse/Footer';
 
 //Types
@@ -91,7 +91,7 @@ export default async function RootLayout({
 
         <body className={`${roboto.variable} ${fira.variable}`}>
           <NextIntlClientProvider locale={locale} messages={messages}>
-            {/* <Header locale={locale} /> */}
+            <Header locale={locale} />
             {children}
             <Footer />
           </NextIntlClientProvider>
