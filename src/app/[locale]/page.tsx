@@ -63,9 +63,11 @@ import music_icon from '@assets/icons/hobbies/music_icon.svg';
 //Types
 //imported
 //local
-type Props = {};
+type Props = {
+  params: { locale: string };
+};
 
-export default function Home() {
+export default function Home({ params: { locale } }: Props) {
   //States
   const { resolvedTheme } = useTheme();
 
@@ -108,9 +110,20 @@ export default function Home() {
             </p>
 
             <div className={`${styles.buttons} ${styles.bg_blur}`}>
-              <a href='#' target='_blank'>
-                <Image src={CV_icon} alt='CV icon' />
-              </a>
+              {locale === 'en' ? (
+                <a href='/documents/CV_english.pdf' target='_blank'>
+                  <Image src={CV_icon} alt='CV icon' />
+                </a>
+              ) : locale === 'es' ? (
+                <a href='/documents/CV_español.pdf' target='_blank'>
+                  <Image src={CV_icon} alt='CV icon' />
+                </a>
+              ) : (
+                <a href='/documents/CV_deutsch.pdf' target='_blank'>
+                  <Image src={CV_icon} alt='CV icon' />
+                </a>
+              )}
+
               <a href='https://github.com/eg-delacruz' target='_blank'>
                 <Image src={GitHub_icon} alt='GitHub icon' />
               </a>

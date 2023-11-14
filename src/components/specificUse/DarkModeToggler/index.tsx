@@ -7,9 +7,7 @@ import styles from './styles.module.css';
 
 type Props = {};
 
-//TODO: Check if the mounted state and return null is necessary AFTER site is tested in production
 const DarkModeToggler = () => {
-  const [mounted, setMounted] = useState<boolean>(false);
   const [checked, setChecked] = useState<boolean>(false);
   const { setTheme, theme } = useTheme();
 
@@ -23,8 +21,6 @@ const DarkModeToggler = () => {
 
   // When mounted on client, now we can show the UI
   useEffect(() => {
-    setMounted(true);
-
     //Check if the user has a cookie with the theme saved
     const cookies = document.cookie.split(';');
     const cookie = cookies.find((cookie) => cookie.includes('theme'));

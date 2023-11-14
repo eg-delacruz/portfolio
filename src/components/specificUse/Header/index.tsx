@@ -14,7 +14,6 @@ type Props = {
   locale: string;
 };
 
-//TODO: ver si aplicar colores distintos para el tema claro
 const Header = ({ locale }: Props) => {
   //States
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);

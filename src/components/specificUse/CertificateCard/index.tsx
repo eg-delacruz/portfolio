@@ -16,9 +16,6 @@ type Props = {
   blue_bg?: boolean;
 };
 
-{
-  /* TODO: Put "..." if title is too long and make this card a component to minimize code. Don't forget to put the corresponding css in the component file. Also pass the bg classes as properties and create those clases in the jsx and css */
-}
 const Index = ({
   title,
   issue_date,

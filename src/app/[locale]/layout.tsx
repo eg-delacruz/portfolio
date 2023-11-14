@@ -32,7 +32,6 @@ export function generateStaticParams() {
   return [{ locale: 'en' }, { locale: 'es' }, { locale: 'de' }];
 }
 
-//TODO: Add favicon and everything that was in _document.js
 export default async function RootLayout({
   children,
   params: { locale },
