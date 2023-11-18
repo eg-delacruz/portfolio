@@ -47,6 +47,7 @@ import xd_icon from '@assets/icons/skills/xd.svg';
 
 import projects_icon from '@assets/icons/portfolio_icon.svg';
 import campuscanvas_web from '@assets/images/campuscanvas_web.png';
+import campuscanvas_node_server from '@assets/images/campuscanvas_node_server.png';
 
 import languages_icon from '@assets/icons/world_icon.svg';
 import certificates_icon from '@assets/icons/pad_pen_icon.svg';
@@ -394,6 +395,43 @@ export default function Home({ params: { locale } }: Props) {
                     width={20}
                   />
                   <Image src={git_icon} alt='Git icon' width={20} />
+                  <Image src={github_black_icon} alt='GitHub icon' width={20} />
+                  <Image src={node_icon} alt='Node icon' width={20} />
+                  <Image src={mongoose_icon} alt='Mongoose icon' height={16} />
+                  <Image src={mongo_icon} alt='Mongo DB icon' height={22} />
+                </div>
+              </div>
+            </article>
+
+            <article
+              className={`${styles.project_card} ${styles.cc_nodeserver_card}`}
+            >
+              <div className={styles.project_image_container}>
+                <Image
+                  src={campuscanvas_node_server}
+                  alt='Campus Canvas web app'
+                  loading='lazy'
+                />
+              </div>
+
+              <div className={styles.project_info_container}>
+                <div className={styles.project_info_details}>
+                  <h5>{t(`Page.projects.projects_info.project_2.title`)}</h5>
+                  <p>
+                    {t(`Page.projects.projects_info.project_2.description`)}
+                  </p>
+                  <div className={styles.buttons}>
+                    <a
+                      className='btn_primary'
+                      href='https://github.com/eg-delacruz/cc_nodeserver'
+                      target='_blank'
+                    >
+                      {t(`Page.projects.code_btn`)}
+                    </a>
+                  </div>
+                </div>
+                <div className={styles.project_technologies}>
+                  <Image src={js_icon} alt='JavaScript icon' width={20} />
                   <Image src={github_black_icon} alt='GitHub icon' width={20} />
                   <Image src={node_icon} alt='Node icon' width={20} />
                   <Image

@@ -168,6 +168,8 @@
 .projects_container .project_cards_container {
   max-width: 530px;
   margin: 0 auto;
+  display: grid;
+  gap: 80px;
 }
 .projects_container .project_card {
   background-color: var(--primary-white);
@@ -211,6 +213,9 @@
 
 .projects_container .campuscanvas_card {
   filter: drop-shadow(0px 0px 40px rgba(173, 33, 70, 0.5));
+}
+.projects_container .cc_nodeserver_card {
+  filter: drop-shadow(0px 0px 40px rgba(140, 200, 75, 0.5));
 }
 
 /* ------------------------------- Languages -------------------------------*/
@@ -418,7 +423,7 @@
   color: var(--pure-black);
   filter: none;
   /* Slight white filter: */
-  filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.1));
+  filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.2));
 }
 [data-theme='dark'] .projects_container .project_info_details {
   background-color: var(--contrast-black);

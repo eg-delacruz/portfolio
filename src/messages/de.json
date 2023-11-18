@@ -34,8 +34,16 @@
           "description": "Plattform, die Rabatte für Universitätsstudenten anbietet. Es verfügt über Login, Studentenverifizierung, administrative Verwaltung für die Veröffentlichung und Kontrolle von Rabatten in der Datenbank und Blog-Verwaltung."
         },
         "project_2": {
-          "title": "Petgram",
-          "description": "Petgram Beschreibung"
+          "title": "CC-Node-Server",
+          "description": "Node-Express-basierter Server von Campus Canvas. Verantwortlich für die Ausführung täglicher Cronjobs, um Benachrichtigungen an Administratoren zu senden, um Studentenkonten manuell zu überprüfen, und um neue Benutzer per E-Mail daran zu erinnern, den Registrierungsprozess abzuschließen."
+        },
+        "project_3": {
+          "title": "Title",
+          "description": "Description"
+        },
+        "project_4": {
+          "title": "Title",
+          "description": "Description"
         }
       }
     },
