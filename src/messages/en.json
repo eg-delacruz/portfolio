@@ -38,8 +38,8 @@
           "description": "Node-express-based server of Campus Canvas. Responsible of running daily cronjobs to send notifications to admins to manually verify student accounts and to remind new users to complete registration process via email"
         },
         "project_3": {
-          "title": "Title",
-          "description": "Description"
+          "title": "Petgram",
+          "description": "The social network for pets. Petgram is an application developed with Next.js and TypeScript. It features a login system, likes, and public and private routes."
         },
         "project_4": {
           "title": "Title",

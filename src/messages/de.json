@@ -38,8 +38,8 @@
           "description": "Node-Express-basierter Server von Campus Canvas. Verantwortlich für die Ausführung täglicher Cronjobs, um Benachrichtigungen an Administratoren zu senden, um Studentenkonten manuell zu überprüfen, und um neue Benutzer per E-Mail daran zu erinnern, den Registrierungsprozess abzuschließen."
         },
         "project_3": {
-          "title": "Title",
-          "description": "Description"
+          "title": "Petgram",
+          "description": "Das soziale Netzwerk für Haustiere. Petgram ist eine Anwendung, die mit Next.js und TypeScript entwickelt wurde. Es verfügt über ein Anmeldesystem, Likes sowie öffentliche und private Routen."
         },
         "project_4": {
           "title": "Title",

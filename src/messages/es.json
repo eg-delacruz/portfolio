@@ -38,8 +38,8 @@
           "description": "Servidor basado en Node.js y Express de Campus Canvas. Es responsable de ejecutar tareas programadas diarias para enviar notificaciones a los administradores para verificar manualmente las cuentas de los estudiantes y recordar a los nuevos usuarios que completen el proceso de registro por correo electrónico."
         },
         "project_3": {
-          "title": "Title",
-          "description": "Description"
+          "title": "Petgram",
+          "description": "La red social para mascotas. Petgram es una aplicación desarrollada con Next JS y TypeScript. Cuenta con sistema de login, likes y rutas públicas y privadas."
         },
         "project_4": {
           "title": "Title",

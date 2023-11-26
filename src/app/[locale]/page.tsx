@@ -30,6 +30,8 @@ import next_white_icon from '@assets/icons/skills/next_white.svg';
 import sass_icon from '@assets/icons/skills/sass.svg';
 import redux_icon from '@assets/icons/skills/redux.svg';
 import react_query_icon from '@assets/icons/skills/react_query.svg';
+import styled_components_black_icon from '@assets/icons/skills/styles_components.svg';
+import styles_components_white_icon from '@assets/icons/skills/styles_components_white.svg';
 import graph_ql_icon from '@assets/icons/skills/graph_ql.svg';
 import git_icon from '@assets/icons/skills/git.svg';
 import github_black_icon from '@assets/icons/skills/github_black.svg';
@@ -48,6 +50,7 @@ import xd_icon from '@assets/icons/skills/xd.svg';
 import projects_icon from '@assets/icons/portfolio_icon.svg';
 import campuscanvas_web from '@assets/images/campuscanvas_web.png';
 import campuscanvas_node_server from '@assets/images/campuscanvas_node_server.png';
+import petgram from '@assets/images/petgram.png';
 
 import languages_icon from '@assets/icons/world_icon.svg';
 import certificates_icon from '@assets/icons/pad_pen_icon.svg';
@@ -212,6 +215,25 @@ export default function Home({ params: { locale } }: Props) {
                   <Image src={redux_icon} alt='Redux icon' />
                 </div>
                 <p>Redux</p>
+              </div>
+
+              <div
+                className={`${styles.skill_card} ${styles.styled_components_bg_stain}`}
+              >
+                <div className={styles.skill_icon}>
+                  {resolvedTheme === 'dark' ? (
+                    <Image
+                      src={styles_components_white_icon}
+                      alt='Styled Components icon'
+                    />
+                  ) : (
+                    <Image
+                      src={styled_components_black_icon}
+                      alt='Styled Components icon'
+                    />
+                  )}
+                </div>
+                <p>Styled Components</p>
               </div>
 
               <div className={styles.skill_card}>
@@ -432,7 +454,6 @@ export default function Home({ params: { locale } }: Props) {
                 </div>
                 <div className={styles.project_technologies}>
                   <Image src={js_icon} alt='JavaScript icon' width={20} />
-                  <Image src={github_black_icon} alt='GitHub icon' width={20} />
                   <Image src={node_icon} alt='Node icon' width={20} />
                   <Image
                     src={express_black_icon}
@@ -441,6 +462,55 @@ export default function Home({ params: { locale } }: Props) {
                   />
                   <Image src={mongoose_icon} alt='Mongoose icon' height={16} />
                   <Image src={mongo_icon} alt='Mongo DB icon' height={22} />
+                  <Image src={git_icon} alt='Git icon' width={20} />
+                  <Image src={github_black_icon} alt='GitHub icon' width={20} />
+                </div>
+              </div>
+            </article>
+
+            <article
+              className={`${styles.project_card} ${styles.petgram_card}`}
+            >
+              <div className={styles.project_image_container}>
+                <Image src={petgram} alt='Petgram platform' loading='lazy' />
+              </div>
+
+              <div className={styles.project_info_container}>
+                <div className={styles.project_info_details}>
+                  <h5>{t(`Page.projects.projects_info.project_3.title`)}</h5>
+                  <p>
+                    {t(`Page.projects.projects_info.project_3.description`)}
+                  </p>
+                  <div className={styles.buttons}>
+                    <a
+                      className='btn_primary'
+                      href='https://github.com/eg-delacruz/petgram-exercise'
+                      target='_blank'
+                    >
+                      {t(`Page.projects.code_btn`)}
+                    </a>
+                    <a
+                      className='btn_primary'
+                      href='https://petgram-exercise.vercel.app/'
+                      target='_blank'
+                    >
+                      {t(`Page.projects.site_btn`)}
+                    </a>
+                  </div>
+                </div>
+                <div className={styles.project_technologies}>
+                  <Image src={html_icon} alt='HTML icon' width={20} />
+                  <Image
+                    src={styled_components_black_icon}
+                    alt='Styled Components icon'
+                    width={40}
+                  />
+                  <Image src={ts_icon} alt='TypeScript icon' width={20} />
+                  <Image src={react_icon} alt='React icon' width={20} />
+                  <Image src={next_black_icon} alt='Next icon' width={20} />
+                  <Image src={graph_ql_icon} alt='Graph QL icon' width={20} />
+                  <Image src={git_icon} alt='Git icon' width={20} />
+                  <Image src={github_black_icon} alt='GitHub icon' width={20} />
                 </div>
               </div>
             </article>
