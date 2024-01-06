@@ -25,6 +25,7 @@ type Props = {
 //Metadata
 //Title and description is not here because it it added manually to the page, so that it is dynamic depending on the language
 export const metadata: Metadata = {
+  title: "Gerardo De La Cruz",
   icons: {
     apple: [{ url: "/favicon/apple-touch-icon.png", sizes: "180x180" }],
   },
