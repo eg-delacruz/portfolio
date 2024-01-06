@@ -42,8 +42,8 @@
           "description": "The social network for pets. Petgram is an application developed with Next.js and TypeScript. It features a login system, likes, and public and private routes."
         },
         "project_4": {
-          "title": "Title",
-          "description": "Description"
+          "title": "Harry Potter Characters & Quiz",
+          "description": "Harry Potter themed application in which data is obtained from an API, simulating that they have blog entries. Includes Quiz. Developed to strengthen knowledge in Redux Toolkit, Next JS 14, TypeScript, and caching techniques."
         }
       }
     },

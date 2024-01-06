@@ -17,7 +17,7 @@
     "hero": {
       "quote_strong": "Nunca parar de aprender",
       "quote_rest": " - Actitud clave en los entornos rápidamente cambiantes de hoy en día.",
-      "description": "Mi dominio internacional, mi amplia experiencia lingüística y mi asombrosa dedicación combinadas me llevan a resultados sorprendentes..."
+      "description": "Mi experiencia en ámbitos internacionales, mi amplia destreza lingüística y mi asombrosa dedicación combinadas me llevan a resultados sorprendentes..."
     },
     "skills": {
       "title": "Habilidades",
@@ -42,8 +42,8 @@
           "description": "La red social para mascotas. Petgram es una aplicación desarrollada con Next JS y TypeScript. Cuenta con sistema de login, likes y rutas públicas y privadas."
         },
         "project_4": {
-          "title": "Title",
-          "description": "Description"
+          "title": "Personajes de Harry Potter y Quiz",
+          "description": "Aplicación con temática de Harry Potter en la cual se obtienen datos desde una API, simulando que estos tienen entradas de blog. Incluye Quiz. Desarrollada para afianzar conocimientos en Redux Toolkit, Next JS 14, TypeScript y técnicas de caché."
         }
       }
     },
