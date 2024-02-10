@@ -838,7 +838,7 @@ export default function Home({ params: { locale } }: Props) {
                 `Page.certificates.certificates_info.backend.certificate_2.date`
               )}
               issued_by="Platzi"
-              url={"/certificates/bd.pdf"}
+              url={"/certificates/nodejs-express-api.pdf"}
               blue_bg={true}
             />
             <CertificateCard
@@ -849,8 +849,8 @@ export default function Home({ params: { locale } }: Props) {
                 `Page.certificates.certificates_info.backend.certificate_3.date`
               )}
               issued_by="Platzi"
-              url={"/certificates/fundamentos-node.pdf"}
-              purple_bg={true}
+              url={"/certificates/bd.pdf"}
+              blue_bg={true}
             />
             <CertificateCard
               title={t(
@@ -858,6 +858,17 @@ export default function Home({ params: { locale } }: Props) {
               )}
               issue_date={t(
                 `Page.certificates.certificates_info.backend.certificate_4.date`
+              )}
+              issued_by="Platzi"
+              url={"/certificates/fundamentos-node.pdf"}
+              purple_bg={true}
+            />
+            <CertificateCard
+              title={t(
+                `Page.certificates.certificates_info.backend.certificate_5.title`
+              )}
+              issue_date={t(
+                `Page.certificates.certificates_info.backend.certificate_5.date`
               )}
               issued_by="Platzi"
               url={"/certificates/oop.pdf"}

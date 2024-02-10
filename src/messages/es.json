@@ -148,14 +148,18 @@
             "date": "21 Marzo 2022"
           },
           "certificate_2": {
+            "title": "Backend con NodeJS: API REST con Express",
+            "date": "6 Febrero 2024"
+          },
+          "certificate_3": {
             "title": "Fundamentos de bases de datos",
             "date": "8 Diciembre 2021"
           },
-          "certificate_3": {
+          "certificate_4": {
             "title": "Fundamentos de Node.js",
             "date": "4 Febrero 2022"
           },
-          "certificate_4": {
+          "certificate_5": {
             "title": "Programación orientada a objetos",
             "date": "5 Febrero 2021"
           }
