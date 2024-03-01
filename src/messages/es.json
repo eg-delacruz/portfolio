@@ -17,7 +17,7 @@
     "hero": {
       "quote_strong": "Nunca parar de aprender",
       "quote_rest": " - Actitud clave en los entornos rápidamente cambiantes de hoy en día.",
-      "description": "Mi dominio internacional, mi amplia experiencia lingüística y mi asombrosa dedicación combinadas me llevan a resultados sorprendentes..."
+      "description": "Mi experiencia en ámbitos internacionales, mi amplia destreza lingüística y mi asombrosa dedicación combinadas me llevan a resultados sorprendentes..."
     },
     "skills": {
       "title": "Habilidades",
@@ -42,8 +42,8 @@
           "description": "La red social para mascotas. Petgram es una aplicación desarrollada con Next JS y TypeScript. Cuenta con sistema de login, likes y rutas públicas y privadas."
         },
         "project_4": {
-          "title": "Title",
-          "description": "Description"
+          "title": "Personajes de Harry Potter y Quiz",
+          "description": "Aplicación con temática de Harry Potter en la cual se obtienen datos desde una API, simulando que estos tienen entradas de blog. Incluye Quiz. Desarrollada para afianzar conocimientos en Redux Toolkit, Next JS 14, TypeScript y técnicas de caché."
         }
       }
     },
@@ -148,14 +148,26 @@
             "date": "21 Marzo 2022"
           },
           "certificate_2": {
+            "title": "Backend con NodeJS: API REST con Express",
+            "date": "6 Febrero 2024"
+          },
+          "certificate_3": {
+            "title": "Introducción a los patrones de diseño de software",
+            "date": "24 Febrero 2024"
+          },
+          "certificate_4": {
+            "title": "Patrones de diseño creacionales en JavaScript",
+            "date": "1 Marzo 2024"
+          },
+          "certificate_5": {
             "title": "Fundamentos de bases de datos",
             "date": "8 Diciembre 2021"
           },
-          "certificate_3": {
+          "certificate_6": {
             "title": "Fundamentos de Node.js",
             "date": "4 Febrero 2022"
           },
-          "certificate_4": {
+          "certificate_7": {
             "title": "Programación orientada a objetos",
             "date": "5 Febrero 2021"
           }

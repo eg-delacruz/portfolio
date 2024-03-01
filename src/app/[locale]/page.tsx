@@ -30,7 +30,8 @@ import next_white_icon from '@assets/icons/skills/next_white.svg';
 import sass_icon from '@assets/icons/skills/sass.svg';
 import redux_icon from '@assets/icons/skills/redux.svg';
 import react_query_icon from '@assets/icons/skills/react_query.svg';
-import aws_icon from '@assets/icons/skills/aws.svg';
+import aws_white_icon from '@assets/icons/skills/aws_white.svg';
+import aws_black_icon from '@assets/icons/skills/aws_black.svg';
 import styled_components_black_icon from '@assets/icons/skills/styles_components.svg';
 import styles_components_white_icon from '@assets/icons/skills/styles_components_white.svg';
 import graph_ql_icon from '@assets/icons/skills/graph_ql.svg';
@@ -52,6 +53,7 @@ import projects_icon from '@assets/icons/portfolio_icon.svg';
 import campuscanvas_web from '@assets/images/campuscanvas_web.png';
 import campuscanvas_node_server from '@assets/images/campuscanvas_node_server.png';
 import petgram from '@assets/images/petgram.png';
+import hp from '@assets/images/harry_potter.png';
 
 import languages_icon from '@assets/icons/world_icon.svg';
 import certificates_icon from '@assets/icons/pad_pen_icon.svg';
@@ -220,7 +222,11 @@ export default function Home({ params: { locale } }: Props) {
 
               <div className={`${styles.skill_card}`}>
                 <div className={styles.skill_icon}>
-                  <Image src={aws_icon} alt='AWS icon' />
+                  {resolvedTheme === 'dark' ? (
+                    <Image src={aws_white_icon} alt='AWS icon' />
+                  ) : (
+                    <Image src={aws_black_icon} alt='AWS icon' />
+                  )}
                 </div>
                 <p>AWS</p>
               </div>
@@ -522,6 +528,48 @@ export default function Home({ params: { locale } }: Props) {
                 </div>
               </div>
             </article>
+
+            <article className={`${styles.project_card} ${styles.hp_card}`}>
+              <div className={styles.project_image_container}>
+                <Image src={hp} alt='Harry Potter Platform' loading='lazy' />
+              </div>
+
+              <div className={styles.project_info_container}>
+                <div className={styles.project_info_details}>
+                  <h5>{t(`Page.projects.projects_info.project_4.title`)}</h5>
+                  <p>
+                    {t(`Page.projects.projects_info.project_4.description`)}
+                  </p>
+                  <div className={styles.buttons}>
+                    <a
+                      className='btn_primary'
+                      href='https://github.com/eg-delacruz/harry-potter'
+                      target='_blank'
+                    >
+                      {t(`Page.projects.code_btn`)}
+                    </a>
+                    <a
+                      className='btn_primary'
+                      href='https://harry-potter-dun-eta.vercel.app/'
+                      target='_blank'
+                    >
+                      {t(`Page.projects.site_btn`)}
+                    </a>
+                  </div>
+                </div>
+                <div className={styles.project_technologies}>
+                  <Image src={html_icon} alt='HTML icon' width={20} />
+                  <Image src={ts_icon} alt='TypeScript icon' width={20} />
+                  <Image src={react_icon} alt='React icon' width={20} />
+                  <Image src={next_black_icon} alt='Next icon' width={20} />
+                  <Image src={sass_icon} alt='SASS icon' width={20} />
+                  <Image src={redux_icon} alt='Redux icon' width={20} />
+                  <Image src={git_icon} alt='Git icon' width={20} />
+                  <Image src={github_black_icon} alt='GitHub icon' width={20} />
+                  <Image src={figma_icon} alt='Figma icon' width={14} />
+                </div>
+              </div>
+            </article>
           </div>
         </div>
       </section>
@@ -803,7 +851,7 @@ export default function Home({ params: { locale } }: Props) {
                 `Page.certificates.certificates_info.backend.certificate_2.date`
               )}
               issued_by='Platzi'
-              url={'/certificates/bd.pdf'}
+              url={'/certificates/nodejs-express-api.pdf'}
               blue_bg={true}
             />
             <CertificateCard
@@ -814,8 +862,8 @@ export default function Home({ params: { locale } }: Props) {
                 `Page.certificates.certificates_info.backend.certificate_3.date`
               )}
               issued_by='Platzi'
-              url={'/certificates/fundamentos-node.pdf'}
-              purple_bg={true}
+              url={'/certificates/introduccion-patrones-diseno-software.pdf'}
+              blue_bg={true}
             />
             <CertificateCard
               title={t(
@@ -823,6 +871,39 @@ export default function Home({ params: { locale } }: Props) {
               )}
               issue_date={t(
                 `Page.certificates.certificates_info.backend.certificate_4.date`
+              )}
+              issued_by='Platzi'
+              url={'/certificates/patrones-diseno-creacionales.pdf'}
+              blue_bg={true}
+            />
+            <CertificateCard
+              title={t(
+                `Page.certificates.certificates_info.backend.certificate_5.title`
+              )}
+              issue_date={t(
+                `Page.certificates.certificates_info.backend.certificate_5.date`
+              )}
+              issued_by='Platzi'
+              url={'/certificates/bd.pdf'}
+              blue_bg={true}
+            />
+            <CertificateCard
+              title={t(
+                `Page.certificates.certificates_info.backend.certificate_6.title`
+              )}
+              issue_date={t(
+                `Page.certificates.certificates_info.backend.certificate_6.date`
+              )}
+              issued_by='Platzi'
+              url={'/certificates/fundamentos-node.pdf'}
+              purple_bg={true}
+            />
+            <CertificateCard
+              title={t(
+                `Page.certificates.certificates_info.backend.certificate_7.title`
+              )}
+              issue_date={t(
+                `Page.certificates.certificates_info.backend.certificate_7.date`
               )}
               issued_by='Platzi'
               url={'/certificates/oop.pdf'}

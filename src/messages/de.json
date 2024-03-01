@@ -42,8 +42,8 @@
           "description": "Das soziale Netzwerk für Haustiere. Petgram ist eine Anwendung, die mit Next.js und TypeScript entwickelt wurde. Es verfügt über ein Anmeldesystem, Likes sowie öffentliche und private Routen."
         },
         "project_4": {
-          "title": "Title",
-          "description": "Description"
+          "title": "Harry Potter Charaktere & Quiz",
+          "description": "Harry Potter-Themenanwendung, bei der Daten von einer API abgerufen werden, die vorgibt, Blog-Einträge zu haben. Enthält ein Quiz. Entwickelt, um Kenntnisse in Redux Toolkit, Next JS 14, TypeScript und Caching-Techniken zu stärken."
         }
       }
     },
@@ -148,14 +148,26 @@
             "date": "21. März 2022"
           },
           "certificate_2": {
+            "title": "Backend mit NodeJS: API REST mit Express",
+            "date": "6. Februar 2024"
+          },
+          "certificate_3": {
+            "title": "Einführung in Software-Designmuster",
+            "date": "24. Februar 2024"
+          },
+          "certificate_4": {
+            "title": "Erzeugungsmuster in JavaScript",
+            "date": "1. März 2024"
+          },
+          "certificate_5": {
             "title": "Datenbankgrundlagen",
             "date": "8. Dezember 2021"
           },
-          "certificate_3": {
+          "certificate_6": {
             "title": "Node.js Grundlagen",
             "date": "4. Februar 2022"
           },
-          "certificate_4": {
+          "certificate_7": {
             "title": "Objektorientierte Programmierung",
             "date": "5. Februar 2021"
           }
