@@ -30,6 +30,7 @@ import next_white_icon from '@assets/icons/skills/next_white.svg';
 import sass_icon from '@assets/icons/skills/sass.svg';
 import redux_icon from '@assets/icons/skills/redux.svg';
 import react_query_icon from '@assets/icons/skills/react_query.svg';
+import aws_icon from '@assets/icons/skills/aws.svg';
 import styled_components_black_icon from '@assets/icons/skills/styles_components.svg';
 import styles_components_white_icon from '@assets/icons/skills/styles_components_white.svg';
 import graph_ql_icon from '@assets/icons/skills/graph_ql.svg';
@@ -215,6 +216,13 @@ export default function Home({ params: { locale } }: Props) {
                   <Image src={redux_icon} alt='Redux icon' />
                 </div>
                 <p>Redux</p>
+              </div>
+
+              <div className={`${styles.skill_card}`}>
+                <div className={styles.skill_icon}>
+                  <Image src={aws_icon} alt='AWS icon' />
+                </div>
+                <p>AWS</p>
               </div>
 
               <div
