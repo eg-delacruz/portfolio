@@ -35,9 +35,6 @@ import aws_black_icon from '@assets/icons/skills/aws_black.svg';
 import styled_components_black_icon from '@assets/icons/skills/styles_components.svg';
 import styles_components_white_icon from '@assets/icons/skills/styles_components_white.svg';
 import graph_ql_icon from '@assets/icons/skills/graph_ql.svg';
-import git_icon from '@assets/icons/skills/git.svg';
-import github_black_icon from '@assets/icons/skills/github_black.svg';
-import github_white_icon from '@assets/icons/skills/github_white.svg';
 import node_icon from '@assets/icons/skills/node.svg';
 import express_black_icon from '@assets/icons/skills/express_black.svg';
 import express_white_icon from '@assets/icons/skills/express_white.svg';
@@ -48,6 +45,10 @@ import illustrator_icon from '@assets/icons/skills/illustrator.svg';
 import photoshop_icon from '@assets/icons/skills/photoshop.svg';
 import figma_icon from '@assets/icons/skills/figma.svg';
 import xd_icon from '@assets/icons/skills/xd.svg';
+import git_icon from '@assets/icons/skills/git.svg';
+import github_black_icon from '@assets/icons/skills/github_black.svg';
+import github_white_icon from '@assets/icons/skills/github_white.svg';
+import scrum_icon from '@assets/icons/skills/scrum.svg';
 
 import projects_icon from '@assets/icons/portfolio_icon.svg';
 import campuscanvas_web from '@assets/images/campuscanvas_web.png';
@@ -220,17 +221,6 @@ export default function Home({ params: { locale } }: Props) {
                 <p>Redux</p>
               </div>
 
-              <div className={`${styles.skill_card}`}>
-                <div className={styles.skill_icon}>
-                  {resolvedTheme === 'dark' ? (
-                    <Image src={aws_white_icon} alt='AWS icon' />
-                  ) : (
-                    <Image src={aws_black_icon} alt='AWS icon' />
-                  )}
-                </div>
-                <p>AWS</p>
-              </div>
-
               <div
                 className={`${styles.skill_card} ${styles.styled_components_bg_stain}`}
               >
@@ -265,24 +255,6 @@ export default function Home({ params: { locale } }: Props) {
                 </div>
                 <p>Graph QL</p>
               </div>
-
-              <div className={styles.skill_card}>
-                <div className={styles.skill_icon}>
-                  <Image src={git_icon} alt='Git icon' />
-                </div>
-                <p>Git</p>
-              </div>
-
-              <div className={styles.skill_card}>
-                <div className={styles.skill_icon}>
-                  {resolvedTheme === 'dark' ? (
-                    <Image src={github_white_icon} alt='CSS icon' />
-                  ) : (
-                    <Image src={github_black_icon} alt='CSS icon' />
-                  )}
-                </div>
-                <p>GitHub</p>
-              </div>
             </div>
           </div>
 
@@ -314,6 +286,17 @@ export default function Home({ params: { locale } }: Props) {
                   <Image src={mongoose_icon} alt='Mongoose icon' />
                 </div>
                 <p>Mongoose</p>
+              </div>
+
+              <div className={`${styles.skill_card}`}>
+                <div className={styles.skill_icon}>
+                  {resolvedTheme === 'dark' ? (
+                    <Image src={aws_white_icon} alt='AWS icon' />
+                  ) : (
+                    <Image src={aws_black_icon} alt='AWS icon' />
+                  )}
+                </div>
+                <p>AWS</p>
               </div>
             </div>
           </div>
@@ -368,6 +351,36 @@ export default function Home({ params: { locale } }: Props) {
                   <Image src={xd_icon} alt='XD icon' />
                 </div>
                 <p>XD</p>
+              </div>
+            </div>
+          </div>
+
+          <div className={`${styles.section} ${styles.others_section}`}>
+            <h3>{t(`Page.skills.others`)}</h3>
+            <div className={styles.skills_grid}>
+              <div className={styles.skill_card}>
+                <div className={styles.skill_icon}>
+                  <Image src={git_icon} alt='Git icon' />
+                </div>
+                <p>Git</p>
+              </div>
+
+              <div className={styles.skill_card}>
+                <div className={styles.skill_icon}>
+                  {resolvedTheme === 'dark' ? (
+                    <Image src={github_white_icon} alt='CSS icon' />
+                  ) : (
+                    <Image src={github_black_icon} alt='CSS icon' />
+                  )}
+                </div>
+                <p>GitHub</p>
+              </div>
+
+              <div className={styles.skill_card}>
+                <div className={styles.skill_icon}>
+                  <Image src={scrum_icon} alt='Scrum icon' />
+                </div>
+                <p>Scrum</p>
               </div>
             </div>
           </div>
@@ -1066,6 +1079,26 @@ export default function Home({ params: { locale } }: Props) {
 
           <h3>{t(`Page.certificates.category5`)}</h3>
           <div className={styles.certificates_block}>
+            <CertificateCard
+              title={t(
+                `Page.certificates.certificates_info.others.certificate_5.title`
+              )}
+              issue_date={t(
+                `Page.certificates.certificates_info.others.certificate_5.date`
+              )}
+              issued_by='CertiProf'
+              url={'/certificates/scrum-certiprof.pdf'}
+            />
+            <CertificateCard
+              title={t(
+                `Page.certificates.certificates_info.others.certificate_6.title`
+              )}
+              issue_date={t(
+                `Page.certificates.certificates_info.others.certificate_6.date`
+              )}
+              issued_by='Platzi'
+              url={'/certificates/scrum-platzi.pdf'}
+            />
             <CertificateCard
               title={t(
                 `Page.certificates.certificates_info.others.certificate_1.title`

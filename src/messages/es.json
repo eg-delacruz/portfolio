@@ -22,7 +22,8 @@
     "skills": {
       "title": "Habilidades",
       "database": "Bases de datos",
-      "design": "Diseño"
+      "design": "Diseño",
+      "others": "Otros conocimientos pertinentes"
     },
     "projects": {
       "title": "Proyectos",
@@ -248,6 +249,14 @@
           "certificate_4": {
             "title": "Creación de empresas y startups",
             "date": "6 Febrero 2019"
+          },
+          "certificate_5": {
+            "title": "Certificado Profesional de la Scrum Foundation",
+            "date": "3 Marzo 2024"
+          },
+          "certificate_6": {
+            "title": "Curso profesional de Scrum",
+            "date": "3 Marzo 2024"
           }
         }
       }

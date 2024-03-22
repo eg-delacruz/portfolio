@@ -22,7 +22,8 @@
     "skills": {
       "title": "Skills",
       "database": "Database",
-      "design": "Design"
+      "design": "Design",
+      "others": "Other relevant knowledge"
     },
     "projects": {
       "title": "Projects",
@@ -248,6 +249,14 @@
           "certificate_4": {
             "title": "Creation of Companies and Startups",
             "date": "6 February 2019"
+          },
+          "certificate_5": {
+            "title": "Scrum Foundation Professional Certification SFPC",
+            "date": "3 March 2024"
+          },
+          "certificate_6": {
+            "title": "Scrum Profesional Course",
+            "date": "3 March 2024"
           }
         }
       }
