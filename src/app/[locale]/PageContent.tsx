@@ -131,10 +131,13 @@ function PageContent({ locale, contentTranslations }: Props) {
                   <Image src={CV_icon} alt='CV icon' />
                 </a>
               )}
-              <a href='https:github.com/eg-delacruz' target='_blank'>
+              <a href='https://www.github.com/eg-delacruz' target='_blank'>
                 <Image src={GitHub_icon} alt='GitHub icon' />
               </a>
-              <a href='https:www.linkedin.com/in/eg-delacruz/' target='_blank'>
+              <a
+                href='https://www.linkedin.com/in/eg-delacruz/'
+                target='_blank'
+              >
                 <Image src={LinkedIn_icon} alt='LinkedIn icon' />
               </a>
               <a href='mailto:eg.cruzvalle@gmail.com'>
