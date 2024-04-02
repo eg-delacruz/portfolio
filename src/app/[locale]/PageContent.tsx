@@ -2,7 +2,6 @@
 
 import { useTranslations } from 'next-intl';
 
-import { useTheme } from 'next-themes';
 import Image from 'next/image';
 
 //Styles
@@ -78,9 +77,6 @@ type Props = {
 };
 
 function PageContent({ locale, contentTranslations }: Props) {
-  //States
-  const { resolvedTheme } = useTheme();
-
   //Server side translations
   const { metaData, hero, skills, projects, languages } = contentTranslations;
 
@@ -89,10 +85,6 @@ function PageContent({ locale, contentTranslations }: Props) {
 
   return (
     <>
-      {/* Check how the generateMetadata function of the parent page.tsx component works before removing this */}
-      {/* <title>{metaData.title}</title>
-      <meta name='description' content={metaData.description} /> */}
-
       {/* ------------------------- Hero ------------------------- */}
       <main id={'home'} className={`${styles.main} section`}>
         <div className={`${styles.main_container} container`}>
@@ -190,11 +182,17 @@ function PageContent({ locale, contentTranslations }: Props) {
               </div>
               <div className={`${styles.skill_card} ${styles.next_bg_stain}`}>
                 <div className={styles.skill_icon}>
-                  {resolvedTheme === 'dark' ? (
-                    <Image src={next_white_icon} alt='NextJS icon' />
-                  ) : (
-                    <Image src={next_black_icon} alt='NextJS icon' />
-                  )}
+                  <Image
+                    className='data-hide-on-theme-dark'
+                    src={next_black_icon}
+                    alt='NextJS icon'
+                  />
+
+                  <Image
+                    className='data-hide-on-theme-light'
+                    src={next_white_icon}
+                    alt='NextJS icon'
+                  />
                 </div>
                 <p>Next JS</p>
               </div>
@@ -214,17 +212,17 @@ function PageContent({ locale, contentTranslations }: Props) {
                 className={`${styles.skill_card} ${styles.styled_components_bg_stain}`}
               >
                 <div className={styles.skill_icon}>
-                  {resolvedTheme === 'dark' ? (
-                    <Image
-                      src={styles_components_white_icon}
-                      alt='Styled Components icon'
-                    />
-                  ) : (
-                    <Image
-                      src={styled_components_black_icon}
-                      alt='Styled Components icon'
-                    />
-                  )}
+                  <Image
+                    className='data-hide-on-theme-dark'
+                    src={styled_components_black_icon}
+                    alt='Styled Components icon'
+                  />
+
+                  <Image
+                    className='data-hide-on-theme-light'
+                    src={styles_components_white_icon}
+                    alt='Styled Components icon'
+                  />
                 </div>
                 <p>Styled Components</p>
               </div>
@@ -255,11 +253,17 @@ function PageContent({ locale, contentTranslations }: Props) {
               </div>
               <div className={styles.skill_card}>
                 <div className={styles.skill_icon}>
-                  {resolvedTheme === 'dark' ? (
-                    <Image src={express_white_icon} alt='Express icon' />
-                  ) : (
-                    <Image src={express_black_icon} alt='Express icon' />
-                  )}
+                  <Image
+                    className='data-hide-on-theme-dark'
+                    src={express_black_icon}
+                    alt='Express icon'
+                  />
+
+                  <Image
+                    className='data-hide-on-theme-light'
+                    src={express_white_icon}
+                    alt='Express icon'
+                  />
                 </div>
                 <p>Express</p>
               </div>
@@ -273,11 +277,17 @@ function PageContent({ locale, contentTranslations }: Props) {
               </div>
               <div className={`${styles.skill_card}`}>
                 <div className={styles.skill_icon}>
-                  {resolvedTheme === 'dark' ? (
-                    <Image src={aws_white_icon} alt='AWS icon' />
-                  ) : (
-                    <Image src={aws_black_icon} alt='AWS icon' />
-                  )}
+                  <Image
+                    className='data-hide-on-theme-dark'
+                    src={aws_black_icon}
+                    alt='AWS icon'
+                  />
+
+                  <Image
+                    className='data-hide-on-theme-white'
+                    src={aws_white_icon}
+                    alt='AWS icon'
+                  />
                 </div>
                 <p>AWS</p>
               </div>
@@ -342,11 +352,17 @@ function PageContent({ locale, contentTranslations }: Props) {
               </div>
               <div className={styles.skill_card}>
                 <div className={styles.skill_icon}>
-                  {resolvedTheme === 'dark' ? (
-                    <Image src={github_white_icon} alt='CSS icon' />
-                  ) : (
-                    <Image src={github_black_icon} alt='CSS icon' />
-                  )}
+                  <Image
+                    className='data-hide-on-theme-dark'
+                    src={github_black_icon}
+                    alt='GitHub icon'
+                  />
+
+                  <Image
+                    className='data-hide-on-theme-light'
+                    src={github_white_icon}
+                    alt='GitHub icon'
+                  />
                 </div>
                 <p>GitHub</p>
               </div>
