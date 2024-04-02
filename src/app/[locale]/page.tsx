@@ -44,7 +44,7 @@ export async function generateMetadata({ params }: Props) {
   return metadata;
 }
 
-//Component responsible for passing translations from the server to the client
+//Component responsible for passing translations from the server to the client, as well as generating the right metadata for each language
 export default function Home({ params: { locale } }: Props) {
   //Translations to be passed from the server to the client
   const t = useTranslations();

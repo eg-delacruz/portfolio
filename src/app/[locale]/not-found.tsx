@@ -1,9 +1,7 @@
-export default function NotFound() {
-  return (
-    <html>
-      <body>
-        <h1>Something went wront!</h1>
-      </body>
-    </html>
-  );
-}
+import React from 'react';
+
+const notFound = () => {
+  return <h1>notFound</h1>;
+};
+
+export default notFound;
