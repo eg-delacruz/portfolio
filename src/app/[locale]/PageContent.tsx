@@ -495,7 +495,7 @@ function PageContent({ locale, contentTranslations }: Props) {
                     </a>
                     <a
                       className='btn_primary'
-                      href='https://www.petgram-exercise.vercel.app/'
+                      href='https://petgram-exercise.vercel.app/'
                       target='_blank'
                     >
                       {projects.site_btn}
@@ -536,7 +536,7 @@ function PageContent({ locale, contentTranslations }: Props) {
                     </a>
                     <a
                       className='btn_primary'
-                      href='https://www.harry-potter-dun-eta.vercel.app/'
+                      href='https://harry-potter-dun-eta.vercel.app/'
                       target='_blank'
                     >
                       {projects.site_btn}
