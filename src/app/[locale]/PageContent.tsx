@@ -402,14 +402,14 @@ function PageContent({ locale, contentTranslations }: Props) {
                   <div className={styles.buttons}>
                     <a
                       className='btn_primary'
-                      href='https:github.com/eg-delacruz/campuscanvas'
+                      href='https://www.github.com/eg-delacruz/campuscanvas'
                       target='_blank'
                     >
                       {projects.code_btn}
                     </a>
                     <a
                       className='btn_primary'
-                      href='https:www.campuscanvas.net/'
+                      href='https://www.campuscanvas.net/'
                       target='_blank'
                     >
                       {projects.site_btn}
@@ -453,7 +453,7 @@ function PageContent({ locale, contentTranslations }: Props) {
                   <div className={styles.buttons}>
                     <a
                       className='btn_primary'
-                      href='https:github.com/eg-delacruz/cc_nodeserver'
+                      href='https://www.github.com/eg-delacruz/cc_nodeserver'
                       target='_blank'
                     >
                       {projects.code_btn}
@@ -488,14 +488,14 @@ function PageContent({ locale, contentTranslations }: Props) {
                   <div className={styles.buttons}>
                     <a
                       className='btn_primary'
-                      href='https:github.com/eg-delacruz/petgram-exercise'
+                      href='https://www.github.com/eg-delacruz/petgram-exercise'
                       target='_blank'
                     >
                       {projects.code_btn}
                     </a>
                     <a
                       className='btn_primary'
-                      href='https:petgram-exercise.vercel.app/'
+                      href='https://www.petgram-exercise.vercel.app/'
                       target='_blank'
                     >
                       {projects.site_btn}
@@ -529,14 +529,14 @@ function PageContent({ locale, contentTranslations }: Props) {
                   <div className={styles.buttons}>
                     <a
                       className='btn_primary'
-                      href='https:github.com/eg-delacruz/harry-potter'
+                      href='https://www.github.com/eg-delacruz/harry-potter'
                       target='_blank'
                     >
                       {projects.code_btn}
                     </a>
                     <a
                       className='btn_primary'
-                      href='https:harry-potter-dun-eta.vercel.app/'
+                      href='https://www.harry-potter-dun-eta.vercel.app/'
                       target='_blank'
                     >
                       {projects.site_btn}

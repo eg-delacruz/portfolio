@@ -12,22 +12,10 @@ import Header from '@components/specificUse/Header';
 import Footer from '@components/specificUse/Footer';
 
 //Types
-//imported
-import type { Metadata } from 'next';
-//local
 type Props = {
   children: React.ReactNode;
   params: { locale: string };
 };
-
-//Metadata
-//Title and description is not here because it it added manually to the page, so that it is dynamic depending on the language
-// export const metadata: Metadata = {
-//   title: "Gerardo De La Cruz",
-//   icons: {
-//     apple: [{ url: "/favicon/apple-touch-icon.png", sizes: "180x180" }],
-//   },
-// };
 
 export default async function RootLayout({
   children,
