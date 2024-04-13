@@ -1,4 +1,17 @@
-.certificates_container .certificates_block {
+.search_bar {
+  display: block;
+  margin: 0 auto 16px;
+  width: 310px;
+  padding: 4px;
+  border-radius: 5px;
+  background-color: var(--secondary-white);
+  height: 34px;
+}
+.search_bar:focus {
+  outline: none;
+}
+
+.certificates_block {
   margin: 24px 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -9,4 +22,9 @@
   .certificates_container .certificates_block {
     grid-template-columns: repeat(1, 1fr);
   }
+}
+
+/* Dark mode */
+[data-theme="dark"] .search_bar {
+  background-color: var(--contrast-black-2);
 }

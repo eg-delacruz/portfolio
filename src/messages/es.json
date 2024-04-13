@@ -57,6 +57,8 @@
     },
     "certificates": {
       "title": "Certificados",
+      "search_bar_placeholder": "Buscar por título...",
+      "no_certificates_found_message": "No se encontraron certificados",
       "category1": "Front-End",
       "category2": "Back-End",
       "category3": "Desarrollo",
