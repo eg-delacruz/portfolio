@@ -1,59 +1,105 @@
-import { Metadata } from 'next';
+import { Metadata } from "next";
 
 import {
   useTranslations,
   NextIntlClientProvider,
   useMessages,
-} from 'next-intl';
+} from "next-intl";
 
 //Components
-import PageContent from './PageContent';
+import { Main } from "@components/specificUse/sections/main/Main";
+import { Skills } from "@/components/specificUse/sections/skills/Skills";
+import { Projects } from "@/components/specificUse/sections/projects/Projects";
+import { Languages } from "@/components/specificUse/sections/languages/Languages";
+import { Certificates } from "@/components/specificUse/sections/certificates/Certificates";
+import { Hobbies } from "@/components/specificUse/sections/hobbies/Hobbies";
 
 //Types
 type Props = {
   params: { locale: string };
 };
+type ContentTranslations = {
+  hero: {
+    quote_strong: string;
+    quote_rest: string;
+    description: string;
+  };
+  skills: {
+    title: string;
+    database: string;
+    design: string;
+    others: string;
+  };
+  projects: {
+    title: string;
+    code_btn: string;
+    site_btn: string;
+    projects_info: {
+      project_1: {
+        title: string;
+        description: string;
+      };
+      project_2: {
+        title: string;
+        description: string;
+      };
+      project_3: {
+        title: string;
+        description: string;
+      };
+      project_4: {
+        title: string;
+        description: string;
+      };
+    };
+  };
+  languages: {
+    title: string;
+    spanish: string;
+    spanish_level: string;
+    english: string;
+    german: string;
+  };
+  hobbies: {
+    title: string;
+  };
+};
 
 //MetaData
 const spanishMetadata: Metadata = {
-  title: 'Gerardo De La Cruz',
+  title: "Gerardo De La Cruz",
   description:
-    'Desarrollador Full Stack. Conoce mis habilidades, proyectos, idiomas y certificados.',
+    "Desarrollador Full Stack. Conoce mis habilidades, proyectos, idiomas y certificados.",
 };
 
 const englishMetadata: Metadata = {
-  title: 'Gerardo De La Cruz',
+  title: "Gerardo De La Cruz",
   description:
-    'Full Stack developer. Discover my skills, projects, languages and certificates.',
+    "Full Stack developer. Discover my skills, projects, languages and certificates.",
 };
 
 const germanMetadata: Metadata = {
-  title: 'Gerardo De La Cruz',
+  title: "Gerardo De La Cruz",
   description:
-    'Full Stack Entwickler. Entdecken Sie meine Fähigkeiten, Projekte, Sprachen und Zertifikate.',
+    "Full Stack Entwickler. Entdecken Sie meine Fähigkeiten, Projekte, Sprachen und Zertifikate.",
 };
 
 export async function generateMetadata({ params }: Props) {
   const metadata =
-    params.locale === 'es'
+    params.locale === "es"
       ? spanishMetadata
-      : params.locale === 'en'
+      : params.locale === "en"
       ? englishMetadata
       : germanMetadata;
 
   return metadata;
 }
 
-//Component responsible for passing translations from the server to the client, as well as generating the right metadata for each language
 export default function Home({ params: { locale } }: Props) {
-  //Translations to be passed from the server to the client
+  //Translations accessible from server (important for SEO)
   const t = useTranslations();
 
-  const contentTranslations = {
-    metaData: {
-      title: t(`Page.meta_data.title`),
-      description: t(`Page.meta_data.description`),
-    },
+  const contentTranslations: ContentTranslations = {
     hero: {
       quote_strong: t(`Page.hero.quote_strong`),
       quote_rest: t(`Page.hero.quote_rest`),
@@ -95,14 +141,30 @@ export default function Home({ params: { locale } }: Props) {
       english: t(`Page.languages.english`),
       german: t(`Page.languages.german`),
     },
+    hobbies: {
+      title: t(`Page.hobbies.title`),
+    },
   };
 
   //Translations accessible from the client
   const messages = useMessages();
 
   return (
-    <NextIntlClientProvider locale={locale} messages={messages}>
-      <PageContent locale={locale} contentTranslations={contentTranslations} />
-    </NextIntlClientProvider>
+    <>
+      <Main locale={locale} translations={contentTranslations.hero} />
+
+      <Skills translations={contentTranslations.skills} />
+
+      <Projects translations={contentTranslations.projects} />
+
+      <Languages translations={contentTranslations.languages} />
+
+      {/* We wrap this component like this to give it access to translations client side */}
+      <NextIntlClientProvider locale={locale} messages={messages}>
+        <Certificates />
+      </NextIntlClientProvider>
+
+      <Hobbies translations={contentTranslations.hobbies} />
+    </>
   );
 }

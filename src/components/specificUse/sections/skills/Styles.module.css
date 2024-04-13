@@ -1,0 +1,97 @@
+.skills_container h3 {
+  margin-bottom: 16px;
+}
+.skills_container .skills_grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 16px;
+}
+
+.skills_container .backend_section,
+.skills_container .database_section,
+.skills_container .design_section,
+.skills_container .others_section {
+  margin-top: 24px;
+}
+.skills_container .skill_card {
+  width: 75px;
+  margin: 0 auto;
+  position: relative;
+}
+.skills_container .skill_icon {
+  background: var(--primary-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--light-blue);
+  height: 90px;
+  border-radius: 5px;
+}
+.skills_container .skill_card p {
+  text-align: center;
+  line-height: 24px;
+}
+
+.skills_container .ts_bg_stain {
+  filter: drop-shadow(0px 0px 40px rgba(49, 120, 198, 1));
+}
+.skills_container .graph_ql_bg_stain {
+  filter: drop-shadow(0px 0px 40px rgba(229, 53, 171, 1));
+}
+.skills_container .redux_bg_stain {
+  filter: drop-shadow(0px 0px 40px rgba(118, 74, 188, 1));
+}
+.skills_container .node_bg_stain {
+  filter: drop-shadow(0px 0px 40px rgba(140, 200, 75, 1));
+}
+.skills_container .mongoose_bg_stain {
+  filter: drop-shadow(0px 0px 40px rgba(183, 28, 28, 1));
+}
+.skills_container .sql_bg_stain {
+  filter: drop-shadow(0px 0px 40px rgba(0, 188, 242, 1));
+}
+.skills_container .illustrator_bg_stain {
+  filter: drop-shadow(0px 0px 40px rgba(255, 87, 34, 1));
+}
+.skills_container .xd_bg_stain {
+  filter: drop-shadow(0px 0px 40px rgba(255, 65, 200, 1));
+}
+
+/* MQ  */
+@media screen and (max-width: 767px) {
+  .skills_container .skills_grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .skills_container .ts_bg_stain {
+    filter: drop-shadow(0px 0px 0px rgba(49, 120, 198, 1));
+  }
+  .skills_container .sql_bg_stain {
+    filter: drop-shadow(0px 0px 0px rgba(0, 188, 242, 1));
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .skills_container .skills_grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .skills_container .graph_ql_bg_stain {
+    filter: drop-shadow(0px 0px 0px rgba(229, 53, 171, 1));
+  }
+  .skills_container .illustrator_bg_stain {
+    filter: drop-shadow(0px 0px 0px rgba(255, 87, 34, 1));
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .skills_container .node_bg_stain {
+    filter: drop-shadow(0px 0px 0px rgba(140, 200, 75, 1));
+  }
+}
+
+/* Dark theme */
+[data-theme="dark"] .skills_container .skill_card {
+  filter: none;
+}
+[data-theme="dark"] .skills_container .skill_icon {
+  background: initial;
+}
