@@ -138,10 +138,10 @@
   }
 
   /* Dark theme  */
-  [data-theme='dark'] .header {
+  [data-theme="dark"] .header {
     background: rgb(36, 40, 61, 0.7);
   }
-  [data-theme='dark'] .menu a {
+  [data-theme="dark"] .menu a {
     color: var(--primary-white);
   }
 }

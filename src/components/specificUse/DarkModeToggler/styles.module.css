@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .label {
@@ -19,7 +19,7 @@
   transition: 0.3s;
 }
 .label:after {
-  content: '';
+  content: "";
   width: 25px;
   height: 25px;
   position: absolute;
