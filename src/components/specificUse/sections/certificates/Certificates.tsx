@@ -1,21 +1,21 @@
-"use client";
-import Image from "next/image";
-import { useState, useMemo } from "react";
+'use client';
+import Image from 'next/image';
+import { useState, useMemo } from 'react';
 
-import { useTranslations } from "next-intl";
+import { useTranslations } from 'next-intl';
 
 //Styles
-import styles from "./Styles.module.css";
+import styles from './Styles.module.css';
 
 //Assets
-import certificates_icon from "@assets/icons/pad_pen_icon.svg";
+import certificates_icon from '@assets/icons/pad_pen_icon.svg';
 
 //Components
-import CertificateCard from "@components/specificUse/CertificateCard";
+import CertificateCard from '@components/specificUse/CertificateCard';
 
 //Hooks
-import { useInputValue } from "@/hooks/useInputValue";
-import useDebouncedSearchValue from "@/hooks/useDebouncedSearchValue";
+import { useInputValue } from '@/hooks/useInputValue';
+import useDebouncedSearchValue from '@/hooks/useDebouncedSearchValue';
 
 type Certificate = {
   title: string;
@@ -28,7 +28,7 @@ type Certificate = {
 
 export const Certificates = () => {
   //Controlling input
-  const SEARCH_BAR = useInputValue("");
+  const SEARCH_BAR = useInputValue('');
   const DEBOUNCED_SEARCH_BAR = useDebouncedSearchValue(SEARCH_BAR.value);
 
   //Client side translations
@@ -43,8 +43,8 @@ export const Certificates = () => {
       issue_date: t(
         `Page.certificates.certificates_info.frontend.certificate_1.date`
       ),
-      issued_by: "Platzi",
-      url: "/certificates/profesional-nextjs.pdf",
+      issued_by: 'Platzi',
+      url: '/certificates/profesional-nextjs.pdf',
       purple_bg: true,
     },
     {
@@ -54,8 +54,8 @@ export const Certificates = () => {
       issue_date: t(
         `Page.certificates.certificates_info.frontend.certificate_2.date`
       ),
-      issued_by: "Platzi",
-      url: "/certificates/nextjs-jamstack.pdf",
+      issued_by: 'Platzi',
+      url: '/certificates/nextjs-jamstack.pdf',
     },
     {
       title: t(
@@ -64,8 +64,8 @@ export const Certificates = () => {
       issue_date: t(
         `Page.certificates.certificates_info.frontend.certificate_3.date`
       ),
-      issued_by: "Platzi",
-      url: "/certificates/nextjs-grandes-datasets.pdf",
+      issued_by: 'Platzi',
+      url: '/certificates/nextjs-grandes-datasets.pdf',
     },
     {
       title: t(
@@ -74,8 +74,8 @@ export const Certificates = () => {
       issue_date: t(
         `Page.certificates.certificates_info.frontend.certificate_4.date`
       ),
-      issued_by: "Platzi",
-      url: "/certificates/nextjs-practico.pdf",
+      issued_by: 'Platzi',
+      url: '/certificates/nextjs-practico.pdf',
     },
     {
       title: t(
@@ -84,8 +84,8 @@ export const Certificates = () => {
       issue_date: t(
         `Page.certificates.certificates_info.frontend.certificate_5.date`
       ),
-      issued_by: "Platzi",
-      url: "/certificates/react-typescript.pdf",
+      issued_by: 'Platzi',
+      url: '/certificates/react-typescript.pdf',
       blue_bg: true,
     },
     {
@@ -95,8 +95,8 @@ export const Certificates = () => {
       issue_date: t(
         `Page.certificates.certificates_info.frontend.certificate_6.date`
       ),
-      issued_by: "Platzi",
-      url: "/certificates/react-2019.pdf",
+      issued_by: 'Platzi',
+      url: '/certificates/react-2019.pdf',
     },
     {
       title: t(
@@ -105,8 +105,8 @@ export const Certificates = () => {
       issue_date: t(
         `Page.certificates.certificates_info.frontend.certificate_7.date`
       ),
-      issued_by: "Platzi",
-      url: "/certificates/practico-react-js-2019.pdf",
+      issued_by: 'Platzi',
+      url: '/certificates/practico-react-js-2019.pdf',
     },
     {
       title: t(
@@ -115,8 +115,8 @@ export const Certificates = () => {
       issue_date: t(
         `Page.certificates.certificates_info.frontend.certificate_8.date`
       ),
-      issued_by: "Platzi",
-      url: "/certificates/react-router-redux.pdf",
+      issued_by: 'Platzi',
+      url: '/certificates/react-router-redux.pdf',
       blue_bg: true,
     },
     {
@@ -126,8 +126,8 @@ export const Certificates = () => {
       issue_date: t(
         `Page.certificates.certificates_info.frontend.certificate_9.date`
       ),
-      issued_by: "Platzi",
-      url: "/certificates/redux.pdf",
+      issued_by: 'Platzi',
+      url: '/certificates/redux.pdf',
     },
     {
       title: t(
@@ -136,8 +136,8 @@ export const Certificates = () => {
       issue_date: t(
         `Page.certificates.certificates_info.frontend.certificate_10.date`
       ),
-      issued_by: "Platzi",
-      url: "/certificates/frontend-developer-2019.pdf",
+      issued_by: 'Platzi',
+      url: '/certificates/frontend-developer-2019.pdf',
     },
     {
       title: t(
@@ -146,8 +146,8 @@ export const Certificates = () => {
       issue_date: t(
         `Page.certificates.certificates_info.frontend.certificate_11.date`
       ),
-      issued_by: "Platzi",
-      url: "/certificates/desarrollo-web.pdf",
+      issued_by: 'Platzi',
+      url: '/certificates/desarrollo-web.pdf',
       purple_bg: true,
     },
     {
@@ -157,8 +157,8 @@ export const Certificates = () => {
       issue_date: t(
         `Page.certificates.certificates_info.frontend.certificate_12.date`
       ),
-      issued_by: "Platzi",
-      url: "/certificates/html-css.pdf",
+      issued_by: 'Platzi',
+      url: '/certificates/html-css.pdf',
     },
     {
       title: t(
@@ -167,8 +167,8 @@ export const Certificates = () => {
       issue_date: t(
         `Page.certificates.certificates_info.frontend.certificate_13.date`
       ),
-      issued_by: "Platzi",
-      url: "/certificates/definitivo-html-css.pdf",
+      issued_by: 'Platzi',
+      url: '/certificates/definitivo-html-css.pdf',
     },
     {
       title: t(
@@ -177,8 +177,8 @@ export const Certificates = () => {
       issue_date: t(
         `Page.certificates.certificates_info.frontend.certificate_14.date`
       ),
-      issued_by: "Platzi",
-      url: "/certificates/practico-html-css.pdf",
+      issued_by: 'Platzi',
+      url: '/certificates/practico-html-css.pdf',
     },
     {
       title: t(
@@ -187,8 +187,8 @@ export const Certificates = () => {
       issue_date: t(
         `Page.certificates.certificates_info.frontend.certificate_15.date`
       ),
-      issued_by: "Platzi",
-      url: "/certificates/animaciones-web.pdf",
+      issued_by: 'Platzi',
+      url: '/certificates/animaciones-web.pdf',
       blue_bg: true,
     },
     {
@@ -198,8 +198,8 @@ export const Certificates = () => {
       issue_date: t(
         `Page.certificates.certificates_info.frontend.certificate_16.date`
       ),
-      issued_by: "Platzi",
-      url: "/certificates/practico-maquetacion-css.pdf",
+      issued_by: 'Platzi',
+      url: '/certificates/practico-maquetacion-css.pdf',
     },
     {
       title: t(
@@ -208,8 +208,8 @@ export const Certificates = () => {
       issue_date: t(
         `Page.certificates.certificates_info.frontend.certificate_17.date`
       ),
-      issued_by: "Platzi",
-      url: "/certificates/responsive-design.pdf",
+      issued_by: 'Platzi',
+      url: '/certificates/responsive-design.pdf',
     },
     {
       title: t(
@@ -218,8 +218,8 @@ export const Certificates = () => {
       issue_date: t(
         `Page.certificates.certificates_info.frontend.certificate_18.date`
       ),
-      issued_by: "Platzi",
-      url: "/certificates/css-grid-layout.pdf",
+      issued_by: 'Platzi',
+      url: '/certificates/css-grid-layout.pdf',
       purple_bg: true,
     },
     {
@@ -229,8 +229,18 @@ export const Certificates = () => {
       issue_date: t(
         `Page.certificates.certificates_info.frontend.certificate_19.date`
       ),
-      issued_by: "Platzi",
-      url: "/certificates/preprocesadores.pdf",
+      issued_by: 'Platzi',
+      url: '/certificates/preprocesadores.pdf',
+    },
+    {
+      title: t(
+        `Page.certificates.certificates_info.frontend.certificate_20.title`
+      ),
+      issue_date: t(
+        `Page.certificates.certificates_info.frontend.certificate_20.date`
+      ),
+      issued_by: 'Platzi',
+      url: '/certificates/cypress-ui.pdf',
     },
   ];
 
@@ -242,8 +252,8 @@ export const Certificates = () => {
       issue_date: t(
         `Page.certificates.certificates_info.backend.certificate_1.date`
       ),
-      issued_by: "Platzi",
-      url: "/certificates/nodejs-mongo-websockets.pdf",
+      issued_by: 'Platzi',
+      url: '/certificates/nodejs-mongo-websockets.pdf',
     },
     {
       title: t(
@@ -252,8 +262,8 @@ export const Certificates = () => {
       issue_date: t(
         `Page.certificates.certificates_info.backend.certificate_2.date`
       ),
-      issued_by: "Platzi",
-      url: "/certificates/nodejs-express-api.pdf",
+      issued_by: 'Platzi',
+      url: '/certificates/nodejs-express-api.pdf',
       blue_bg: true,
     },
     {
@@ -263,8 +273,8 @@ export const Certificates = () => {
       issue_date: t(
         `Page.certificates.certificates_info.backend.certificate_3.date`
       ),
-      issued_by: "Platzi",
-      url: "/certificates/introduccion-patrones-diseno-software.pdf",
+      issued_by: 'Platzi',
+      url: '/certificates/introduccion-patrones-diseno-software.pdf',
       blue_bg: true,
     },
     {
@@ -274,8 +284,8 @@ export const Certificates = () => {
       issue_date: t(
         `Page.certificates.certificates_info.backend.certificate_4.date`
       ),
-      issued_by: "Platzi",
-      url: "/certificates/patrones-diseno-creacionales.pdf",
+      issued_by: 'Platzi',
+      url: '/certificates/patrones-diseno-creacionales.pdf',
       blue_bg: true,
     },
     {
@@ -285,8 +295,8 @@ export const Certificates = () => {
       issue_date: t(
         `Page.certificates.certificates_info.backend.certificate_5.date`
       ),
-      issued_by: "Platzi",
-      url: "/certificates/bd.pdf",
+      issued_by: 'Platzi',
+      url: '/certificates/bd.pdf',
       blue_bg: true,
     },
     {
@@ -296,8 +306,8 @@ export const Certificates = () => {
       issue_date: t(
         `Page.certificates.certificates_info.backend.certificate_6.date`
       ),
-      issued_by: "Platzi",
-      url: "/certificates/fundamentos-node.pdf",
+      issued_by: 'Platzi',
+      url: '/certificates/fundamentos-node.pdf',
       purple_bg: true,
     },
     {
@@ -307,8 +317,8 @@ export const Certificates = () => {
       issue_date: t(
         `Page.certificates.certificates_info.backend.certificate_7.date`
       ),
-      issued_by: "Platzi",
-      url: "/certificates/oop.pdf",
+      issued_by: 'Platzi',
+      url: '/certificates/oop.pdf',
     },
   ];
 
@@ -320,8 +330,8 @@ export const Certificates = () => {
       issue_date: t(
         `Page.certificates.certificates_info.development.certificate_1.date`
       ),
-      issued_by: "Platzi",
-      url: "/certificates/git-github.pdf",
+      issued_by: 'Platzi',
+      url: '/certificates/git-github.pdf',
     },
     {
       title: t(
@@ -330,8 +340,8 @@ export const Certificates = () => {
       issue_date: t(
         `Page.certificates.certificates_info.development.certificate_2.date`
       ),
-      issued_by: "Platzi",
-      url: "/certificates/typescript.pdf",
+      issued_by: 'Platzi',
+      url: '/certificates/typescript.pdf',
     },
     {
       title: t(
@@ -340,8 +350,8 @@ export const Certificates = () => {
       issue_date: t(
         `Page.certificates.certificates_info.development.certificate_3.date`
       ),
-      issued_by: "Platzi",
-      url: "/certificates/typescript-tipos-avanzados.pdf",
+      issued_by: 'Platzi',
+      url: '/certificates/typescript-tipos-avanzados.pdf',
       blue_bg: true,
     },
     {
@@ -351,8 +361,8 @@ export const Certificates = () => {
       issue_date: t(
         `Page.certificates.certificates_info.development.certificate_4.date`
       ),
-      issued_by: "Platzi",
-      url: "/certificates/javascript-profesional.pdf",
+      issued_by: 'Platzi',
+      url: '/certificates/javascript-profesional.pdf',
     },
     {
       title: t(
@@ -361,8 +371,8 @@ export const Certificates = () => {
       issue_date: t(
         `Page.certificates.certificates_info.development.certificate_5.date`
       ),
-      issued_by: "Platzi",
-      url: "/certificates/fundamentos-javascript-2018.pdf",
+      issued_by: 'Platzi',
+      url: '/certificates/fundamentos-javascript-2018.pdf',
       purple_bg: true,
     },
     {
@@ -372,8 +382,8 @@ export const Certificates = () => {
       issue_date: t(
         `Page.certificates.certificates_info.development.certificate_6.date`
       ),
-      issued_by: "Platzi",
-      url: "/certificates/arrays.pdf",
+      issued_by: 'Platzi',
+      url: '/certificates/arrays.pdf',
       purple_bg: true,
     },
     {
@@ -383,8 +393,8 @@ export const Certificates = () => {
       issue_date: t(
         `Page.certificates.certificates_info.development.certificate_7.date`
       ),
-      issued_by: "Platzi",
-      url: "/certificates/asincronismo-js-old.pdf",
+      issued_by: 'Platzi',
+      url: '/certificates/asincronismo-js-old.pdf',
     },
     {
       title: t(
@@ -393,8 +403,18 @@ export const Certificates = () => {
       issue_date: t(
         `Page.certificates.certificates_info.development.certificate_8.date`
       ),
-      issued_by: "Platzi",
-      url: "/certificates/ecmascript.pdf",
+      issued_by: 'Platzi',
+      url: '/certificates/ecmascript.pdf',
+    },
+    {
+      title: t(
+        `Page.certificates.certificates_info.development.certificate_12.title`
+      ),
+      issue_date: t(
+        `Page.certificates.certificates_info.development.certificate_12.date`
+      ),
+      issued_by: 'Platzi',
+      url: '/certificates/automatizacion-pruebas.pdf',
     },
     {
       title: t(
@@ -403,8 +423,8 @@ export const Certificates = () => {
       issue_date: t(
         `Page.certificates.certificates_info.development.certificate_9.date`
       ),
-      issued_by: "Platzi",
-      url: "/certificates/basico-javascript.pdf",
+      issued_by: 'Platzi',
+      url: '/certificates/basico-javascript.pdf',
     },
     {
       title: t(
@@ -413,8 +433,8 @@ export const Certificates = () => {
       issue_date: t(
         `Page.certificates.certificates_info.development.certificate_10.date`
       ),
-      issued_by: "Platzi",
-      url: "/certificates/programacion-basica.pdf",
+      issued_by: 'Platzi',
+      url: '/certificates/programacion-basica.pdf',
       blue_bg: true,
     },
     {
@@ -424,8 +444,8 @@ export const Certificates = () => {
       issue_date: t(
         `Page.certificates.certificates_info.development.certificate_11.date`
       ),
-      issued_by: "SoloLearn",
-      url: "/certificates/csharp-certificate.jpg",
+      issued_by: 'SoloLearn',
+      url: '/certificates/csharp-certificate.jpg',
       blue_bg: true,
     },
   ];
@@ -438,8 +458,8 @@ export const Certificates = () => {
       issue_date: t(
         `Page.certificates.certificates_info.design.certificate_1.date`
       ),
-      issued_by: "Platzi",
-      url: "/certificates/figma-basico.pdf",
+      issued_by: 'Platzi',
+      url: '/certificates/figma-basico.pdf',
       purple_bg: true,
     },
     {
@@ -449,8 +469,8 @@ export const Certificates = () => {
       issue_date: t(
         `Page.certificates.certificates_info.design.certificate_2.date`
       ),
-      issued_by: "Platzi",
-      url: "/certificates/illustrator.pdf",
+      issued_by: 'Platzi',
+      url: '/certificates/illustrator.pdf',
     },
     {
       title: t(
@@ -459,8 +479,8 @@ export const Certificates = () => {
       issue_date: t(
         `Page.certificates.certificates_info.design.certificate_3.date`
       ),
-      issued_by: "Platzi",
-      url: "/certificates/adobe-xd.pdf",
+      issued_by: 'Platzi',
+      url: '/certificates/adobe-xd.pdf',
     },
   ];
 
@@ -472,8 +492,8 @@ export const Certificates = () => {
       issue_date: t(
         `Page.certificates.certificates_info.others.certificate_5.date`
       ),
-      issued_by: "CertiProf",
-      url: "/certificates/scrum-certiprof.pdf",
+      issued_by: 'CertiProf',
+      url: '/certificates/scrum-certiprof.pdf',
     },
     {
       title: t(
@@ -482,8 +502,8 @@ export const Certificates = () => {
       issue_date: t(
         `Page.certificates.certificates_info.others.certificate_6.date`
       ),
-      issued_by: "Platzi",
-      url: "/certificates/scrum-platzi.pdf",
+      issued_by: 'Platzi',
+      url: '/certificates/scrum-platzi.pdf',
     },
     {
       title: t(
@@ -492,8 +512,8 @@ export const Certificates = () => {
       issue_date: t(
         `Page.certificates.certificates_info.others.certificate_1.date`
       ),
-      issued_by: "Platzi",
-      url: "/certificates/google-analytics.pdf",
+      issued_by: 'Platzi',
+      url: '/certificates/google-analytics.pdf',
     },
     {
       title: t(
@@ -502,8 +522,8 @@ export const Certificates = () => {
       issue_date: t(
         `Page.certificates.certificates_info.others.certificate_2.date`
       ),
-      issued_by: "Hochschule Bremen",
-      url: "/certificates/sap.pdf",
+      issued_by: 'Hochschule Bremen',
+      url: '/certificates/sap.pdf',
     },
     {
       title: t(
@@ -512,8 +532,8 @@ export const Certificates = () => {
       issue_date: t(
         `Page.certificates.certificates_info.others.certificate_3.date`
       ),
-      issued_by: "Microsoft",
-      url: "/certificates/microsoft-dynamics.pdf",
+      issued_by: 'Microsoft',
+      url: '/certificates/microsoft-dynamics.pdf',
     },
     {
       title: t(
@@ -522,8 +542,8 @@ export const Certificates = () => {
       issue_date: t(
         `Page.certificates.certificates_info.others.certificate_4.date`
       ),
-      issued_by: "Platzi",
-      url: "/certificates/creacion-de-empresas.pdf",
+      issued_by: 'Platzi',
+      url: '/certificates/creacion-de-empresas.pdf',
       blue_bg: true,
     },
   ];
@@ -595,18 +615,18 @@ export const Certificates = () => {
   }, [DEBOUNCED_SEARCH_BAR]);
 
   return (
-    <section id="certificates" className={`${styles.certificates} section`}>
+    <section id='certificates' className={`${styles.certificates} section`}>
       <div
         className={`${styles.certificates_container} home_section_container container`}
       >
-        <div className="home_section_title_container">
-          <Image src={certificates_icon} alt="Skills icon" />
+        <div className='home_section_title_container'>
+          <Image src={certificates_icon} alt='Skills icon' />
           <h2>{t(`Page.certificates.title`)}</h2>
         </div>
 
         <input
           className={styles.search_bar}
-          type="text"
+          type='text'
           onChange={SEARCH_BAR.onChange}
           value={SEARCH_BAR.value}
           placeholder={t(`Page.certificates.search_bar_placeholder`)}

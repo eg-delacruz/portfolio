@@ -143,6 +143,10 @@
           "certificate_19": {
             "title": "CSS Preprocessors",
             "date": "February 15, 2021"
+          },
+          "certificate_20": {
+            "title": "UI testing automation with Cypress",
+            "date": "April 23, 2024"
           }
         },
         "backend": {
@@ -219,6 +223,10 @@
           "certificate_11": {
             "title": "C# Course",
             "date": "June 3, 2017"
+          },
+          "certificate_12": {
+            "title": "Introduction to automated testing",
+            "date": "April 23, 2024"
           }
         },
         "design": {
