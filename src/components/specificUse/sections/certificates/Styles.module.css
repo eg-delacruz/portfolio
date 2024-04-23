@@ -6,6 +6,7 @@
   border-radius: 5px;
   background-color: var(--secondary-white);
   height: 34px;
+  border: none;
 }
 .search_bar:focus {
   outline: none;
@@ -25,6 +26,6 @@
 }
 
 /* Dark mode */
-[data-theme="dark"] .search_bar {
+[data-theme='dark'] .search_bar {
   background-color: var(--contrast-black-2);
 }
