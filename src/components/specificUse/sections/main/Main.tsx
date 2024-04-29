@@ -83,6 +83,7 @@ export const Main = ({ locale, translations }: Props) => {
             alt='Photo of Gerardo De La Cruz'
             width={280}
             className={styles.profile_picture}
+            priority
           />
         </div>
         <div className={styles.presentation_upper}>
