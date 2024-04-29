@@ -1,0 +1,38 @@
+//Used to create dynamic name for keyframes
+//To use, just do @include moveAndDisapearMixin()
+@mixin keyframes($animName) {
+  @keyframes #{$animName} {
+    @content;
+  }
+}
+
+//Since keyframe name has to be unique, keyframes mixin is required
+@mixin moveAndDisapearMixin(
+  $animName,
+  $x1: 250px,
+  $y1: 300px,
+  $x2,
+  $y2,
+  $animationDelay: 0s,
+  $duration: 5s
+) {
+  @include keyframes($animName) {
+    0% {
+      opacity: 1;
+      top: $y1;
+      left: $x1;
+    }
+    85% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      //Dynamic
+      top: $y2;
+      //Dynamic
+      left: $x2;
+    }
+  }
+  animation: $animName $duration forwards infinite linear;
+  animation-delay: $animationDelay;
+}

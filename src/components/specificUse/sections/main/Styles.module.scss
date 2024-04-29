@@ -1,3 +1,5 @@
+@import '../../../../styles/animations/linearMovingParticlesLoop.scss';
+
 .main {
   margin: 60px 0 110px;
 }
@@ -6,8 +8,8 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-areas:
-    "picture logo"
-    "picture description";
+    'picture logo'
+    'picture description';
 }
 .main_container .picture_container {
   grid-area: picture;
@@ -15,11 +17,10 @@
   width: 280px;
   height: 375px;
   z-index: 0;
-  /* filter: drop-shadow(0px 0px 35px var(--light-blue)); */
   filter: drop-shadow(0px 0px 0px var(--light-blue));
 }
 .main_container .picture_container::before {
-  content: "";
+  content: '';
   position: absolute;
   border: 20px solid var(--light-blue);
   width: 100%;
@@ -30,7 +31,7 @@
   z-index: -1;
 }
 .main_container .picture_container::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 40%;
@@ -41,6 +42,56 @@
   z-index: -1;
   filter: blur(60px);
 }
+
+//Particles
+.particle {
+  position: absolute;
+  z-index: -1;
+}
+.particle1 {
+  @include moveAndDisapearMixin(particle1, -50px, 170px, 170px, -20px, 0s, 5s);
+}
+.particle2 {
+  @include moveAndDisapearMixin(particle2, -50px, 290px, 290px, 80px, 0s, 5s);
+}
+.particle3 {
+  @include moveAndDisapearMixin(particle3, 100px, 400px, 300px, 200px, 0s, 3s);
+}
+.particle4 {
+  @include moveAndDisapearMixin(particle4, 200px, 30px, 270px, -30px, 0s, 2s);
+}
+.particle5 {
+  @include moveAndDisapearMixin(particle5, 200px, 230px, 300px, 140px, 0s, 2s);
+}
+.particle6 {
+  @include moveAndDisapearMixin(
+    particle6,
+    240px,
+    360px,
+    300px,
+    300px,
+    0s,
+    3.5s
+  );
+}
+.particle7 {
+  @include moveAndDisapearMixin(particle7, -50px, 400px, 150px, 250px, 0s, 3s);
+}
+.particle8 {
+  @include moveAndDisapearMixin(
+    particle8,
+    -50px,
+    220px,
+    130px,
+    140px,
+    0s,
+    2.5s
+  );
+}
+.particle9 {
+  @include moveAndDisapearMixin(particle9, 10px, 20px, 50px, -25px, 0s, 1s);
+}
+
 .main_container .presentation_upper {
   grid-area: logo;
   display: flex;
@@ -77,16 +128,66 @@
   .main_container {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-      "picture logo"
-      "description description";
+      'picture logo'
+      'description description';
   }
   .main_container .picture_container,
-  .main_container .picture_container img {
+  .main_container .picture_container .profile_picture {
     width: 200px;
     height: 266px;
   }
   .main_container .picture_container {
     margin: 0 auto;
+  }
+
+  //Partiles
+  .particle2 {
+    @include moveAndDisapearMixin(particle2, -50px, 290px, 220px, 80px, 0s, 5s);
+  }
+  .particle3 {
+    @include moveAndDisapearMixin(
+      particle3,
+      100px,
+      290px,
+      220px,
+      200px,
+      0s,
+      3s
+    );
+  }
+  .particle5 {
+    @include moveAndDisapearMixin(
+      particle5,
+      160px,
+      230px,
+      260px,
+      140px,
+      0s,
+      2s
+    );
+    z-index: 2;
+  }
+  .particle6 {
+    @include moveAndDisapearMixin(
+      particle6,
+      170px,
+      260px,
+      200px,
+      235px,
+      0s,
+      2s
+    );
+  }
+  .particle7 {
+    @include moveAndDisapearMixin(
+      particle7,
+      -10px,
+      290px,
+      150px,
+      190px,
+      0s,
+      3s
+    );
   }
   .main_container .presentation_upper {
     flex-direction: column;
@@ -117,9 +218,9 @@
   .main_container {
     grid-template-columns: 1fr;
     grid-template-areas:
-      "logo"
-      "picture"
-      "description";
+      'logo'
+      'picture'
+      'description';
   }
   .main_container .picture_container::after {
     top: 100px;
@@ -146,12 +247,12 @@
 }
 
 /* Dark theme  */
-[data-theme="dark"] .main_container .buttons {
+[data-theme='dark'] .main_container .buttons {
   filter: none;
 }
-[data-theme="dark"] .main_container .buttons::after {
+[data-theme='dark'] .main_container .buttons::after {
   background: rgba(0, 0, 0, 0.4);
 }
-[data-theme="dark"] .main_container .picture_container::after {
+[data-theme='dark'] .main_container .picture_container::after {
   background: initial;
 }

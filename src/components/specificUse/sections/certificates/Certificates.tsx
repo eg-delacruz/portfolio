@@ -630,7 +630,6 @@ export const Certificates = () => {
           onChange={SEARCH_BAR.onChange}
           value={SEARCH_BAR.value}
           placeholder={t(`Page.certificates.search_bar_placeholder`)}
-          autoFocus
         />
 
         {filteredFrontCertificates.length === 0 &&
