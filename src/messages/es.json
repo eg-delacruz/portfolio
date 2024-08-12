@@ -35,14 +35,18 @@
           "description": "Plataforma que ofrece descuentos a estudiantes universitarios. Cuenta con login, verificación de estudiantes, gestión administrativa para publicación y control de descuentos en base de datos y gestión de blog."
         },
         "project_2": {
+          "title": "Scheduler",
+          "description": "Aplicación web para organizar y agendar meetings y eventos con otras personas. Crea un nuevo evento y deja que tu invitado elija la fecha y hora basado en tu disponibilidad. Recibe notificaciones de confirmación por correo electrónico cuando tu invitado haya elegido una fecha."
+        },
+        "project_3": {
           "title": "CC-Node-Server",
           "description": "Servidor basado en Node.js y Express de Campus Canvas. Es responsable de ejecutar tareas programadas diarias para enviar notificaciones a los administradores para verificar manualmente las cuentas de los estudiantes y recordar a los nuevos usuarios que completen el proceso de registro por correo electrónico."
         },
-        "project_3": {
+        "project_4": {
           "title": "Petgram",
           "description": "La red social para mascotas. Petgram es una aplicación desarrollada con Next JS y TypeScript. Cuenta con sistema de login, likes y rutas públicas y privadas."
         },
-        "project_4": {
+        "project_5": {
           "title": "Personajes de Harry Potter y Quiz",
           "description": "Aplicación con temática de Harry Potter en la cual se obtienen datos desde una API, simulando que estos tienen entradas de blog. Incluye Quiz. Desarrollada para afianzar conocimientos en Redux Toolkit, Next JS 14, TypeScript y técnicas de caché."
         }

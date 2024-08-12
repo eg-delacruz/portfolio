@@ -148,17 +148,17 @@ p {
 }
 
 /* Dark theme  */
-[data-theme="dark"] html,
-[data-theme="dark"] body {
+[data-theme='dark'] html,
+[data-theme='dark'] body {
   background-color: var(--dark-black);
   color: var(--primary-white);
 }
 
-[data-theme="dark"] .data-hide-on-theme-dark,
-[data-theme="light"] .data-hide-on-theme-light {
+[data-theme='dark'] .data-hide-on-theme-dark,
+[data-theme='light'] .data-hide-on-theme-light {
   display: none;
 }
 
-[data-theme="dark"] .secondary_bg_color_section {
+[data-theme='dark'] .secondary_bg_color_section {
   background: var(--light-black);
 }

@@ -1,18 +1,18 @@
-import { Metadata } from "next";
+import { Metadata } from 'next';
 
 import {
   useTranslations,
   NextIntlClientProvider,
   useMessages,
-} from "next-intl";
+} from 'next-intl';
 
 //Components
-import { Main } from "@components/specificUse/sections/main/Main";
-import { Skills } from "@/components/specificUse/sections/skills/Skills";
-import { Projects } from "@/components/specificUse/sections/projects/Projects";
-import { Languages } from "@/components/specificUse/sections/languages/Languages";
-import { Certificates } from "@/components/specificUse/sections/certificates/Certificates";
-import { Hobbies } from "@/components/specificUse/sections/hobbies/Hobbies";
+import { Main } from '@components/specificUse/sections/main/Main';
+import { Skills } from '@/components/specificUse/sections/skills/Skills';
+import { Projects } from '@/components/specificUse/sections/projects/Projects';
+import { Languages } from '@/components/specificUse/sections/languages/Languages';
+import { Certificates } from '@/components/specificUse/sections/certificates/Certificates';
+import { Hobbies } from '@/components/specificUse/sections/hobbies/Hobbies';
 
 //Types
 type Props = {
@@ -51,6 +51,10 @@ type ContentTranslations = {
         title: string;
         description: string;
       };
+      project_5: {
+        title: string;
+        description: string;
+      };
     };
   };
   languages: {
@@ -67,28 +71,28 @@ type ContentTranslations = {
 
 //MetaData
 const spanishMetadata: Metadata = {
-  title: "Gerardo De La Cruz",
+  title: 'Gerardo De La Cruz',
   description:
-    "Desarrollador Full Stack. Conoce mis habilidades, proyectos, idiomas y certificados.",
+    'Desarrollador Full Stack. Conoce mis habilidades, proyectos, idiomas y certificados.',
 };
 
 const englishMetadata: Metadata = {
-  title: "Gerardo De La Cruz",
+  title: 'Gerardo De La Cruz',
   description:
-    "Full Stack developer. Discover my skills, projects, languages and certificates.",
+    'Full Stack developer. Discover my skills, projects, languages and certificates.',
 };
 
 const germanMetadata: Metadata = {
-  title: "Gerardo De La Cruz",
+  title: 'Gerardo De La Cruz',
   description:
-    "Full Stack Entwickler. Entdecken Sie meine Fähigkeiten, Projekte, Sprachen und Zertifikate.",
+    'Full Stack Entwickler. Entdecken Sie meine Fähigkeiten, Projekte, Sprachen und Zertifikate.',
 };
 
 export async function generateMetadata({ params }: Props) {
   const metadata =
-    params.locale === "es"
+    params.locale === 'es'
       ? spanishMetadata
-      : params.locale === "en"
+      : params.locale === 'en'
       ? englishMetadata
       : germanMetadata;
 
@@ -131,6 +135,10 @@ export default function Home({ params: { locale } }: Props) {
         project_4: {
           title: t(`Page.projects.projects_info.project_4.title`),
           description: t(`Page.projects.projects_info.project_4.description`),
+        },
+        project_5: {
+          title: t(`Page.projects.projects_info.project_5.title`),
+          description: t(`Page.projects.projects_info.project_5.description`),
         },
       },
     },

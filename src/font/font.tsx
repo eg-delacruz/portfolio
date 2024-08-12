@@ -1,13 +1,14 @@
-import { Roboto, Fira_Sans } from "next/font/google";
+import { Open_Sans, Fira_Sans } from 'next/font/google';
 
-export const roboto = Roboto({
-  weight: ["400", "700"],
-  subsets: ["latin"],
-  variable: "--roboto",
+//TODO: in the future, chech if the Roboto font is working again
+export const roboto = Open_Sans({
+  weight: ['400', '700'],
+  subsets: ['latin'],
+  variable: '--roboto',
 });
 
 export const fira = Fira_Sans({
-  weight: ["400", "700"],
-  subsets: ["latin"],
-  variable: "--fira",
+  weight: ['400', '700'],
+  subsets: ['latin'],
+  variable: '--fira',
 });
