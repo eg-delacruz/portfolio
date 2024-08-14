@@ -35,12 +35,6 @@ export default async function RootLayout({
       {/* allows search engines to find this page */}
       <meta name='robots' content='index, follow' />
 
-      {/* Favicon */}
-      {/* <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="favicon/apple-touch-icon.png"
-        /> */}
       <link
         rel='icon'
         type='image/png'
@@ -67,6 +61,33 @@ export default async function RootLayout({
       <meta
         name='viewport'
         content='width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'
+      />
+
+      {/* Facebook meta tags */}
+      <meta property='og:url' content='https://www.gerardodelacruz.com' />
+      <meta property='og:type' content='website' />
+      <meta property='og:title' content='Gerardo De La Cruz' />
+      <meta
+        property='og:description'
+        content='Full Stack developer. Discover my skills, projects, languages and certificates.'
+      />
+      <meta
+        property='og:image'
+        content='https://ogcdn.net/e4b8c678-7bd5-445d-ba03-bfaad510c686/v4/gerardodelacruz.com/Gerardo%20De%20La%20Cruz/https%3A%2F%2Fopengraph.b-cdn.net%2Fproduction%2Fimages%2F857fa1e7-4a5d-434c-965f-dfe4c5537d69.jpg%3Ftoken%3DQBSyOI7WFdVRvIuyCXBgO_DqWURo9-D_tU6VQh6Vdbc%26height%3D975%26width%3D731%26expires%3D33259666647/og.png'
+      />
+
+      {/* Twitter meta tags */}
+      <meta name='twitter:card' content='summary_large_image' />
+      <meta property='twitter:domain' content='gerardodelacruz.com' />
+      <meta property='twitter:url' content='https://www.gerardodelacruz.com' />
+      <meta name='twitter:title' content='Gerardo De La Cruz' />
+      <meta
+        name='twitter:description'
+        content='Full Stack developer. Discover my skills, projects, languages and certificates.'
+      />
+      <meta
+        name='twitter:image'
+        content='https://ogcdn.net/e4b8c678-7bd5-445d-ba03-bfaad510c686/v4/gerardodelacruz.com/Gerardo%20De%20La%20Cruz/https%3A%2F%2Fopengraph.b-cdn.net%2Fproduction%2Fimages%2F857fa1e7-4a5d-434c-965f-dfe4c5537d69.jpg%3Ftoken%3DQBSyOI7WFdVRvIuyCXBgO_DqWURo9-D_tU6VQh6Vdbc%26height%3D975%26width%3D731%26expires%3D33259666647/og.png'
       />
 
       <body className={`${roboto.variable} ${fira.variable}`}>
