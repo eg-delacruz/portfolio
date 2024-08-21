@@ -205,7 +205,7 @@
             "date": "January 20, 2021"
           },
           "certificate_6": {
-            "title": "Manipulating Arrays in JS",
+            "title": "Array Manipulation in JS",
             "date": "February 1, 2023"
           },
           "certificate_7": {
@@ -231,6 +231,10 @@
           "certificate_12": {
             "title": "Introduction to automated testing",
             "date": "April 23, 2024"
+          },
+          "certificate_13": {
+            "title": "Data Structures with JavaScript",
+            "date": "August 20, 2024"
           }
         },
         "design": {

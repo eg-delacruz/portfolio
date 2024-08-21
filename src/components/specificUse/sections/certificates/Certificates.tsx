@@ -26,6 +26,7 @@ type Certificate = {
   blue_bg?: boolean;
 };
 
+//CLARIFICATIONS: to add new certificates, just add them at the end of the languages jsons in the corresponding order (DO NOT SHIFT THEM!). Then, add them to the corresponding array below in the spot we prefer
 export const Certificates = () => {
   //Controlling input
   const SEARCH_BAR = useInputValue('');
@@ -363,6 +364,16 @@ export const Certificates = () => {
       ),
       issued_by: 'Platzi',
       url: '/certificates/javascript-profesional.pdf',
+    },
+    {
+      title: t(
+        `Page.certificates.certificates_info.development.certificate_13.title`
+      ),
+      issue_date: t(
+        `Page.certificates.certificates_info.development.certificate_13.date`
+      ),
+      issued_by: 'Platzi',
+      url: '/certificates/estructuras-datos-js.pdf',
     },
     {
       title: t(
