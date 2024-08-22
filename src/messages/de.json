@@ -181,6 +181,10 @@
           "certificate_7": {
             "title": "Objektorientierte Programmierung",
             "date": "5. Februar 2021"
+          },
+          "certificate_8": {
+            "title": "Backend mit NestJS",
+            "date": "22. August 2024"
           }
         },
         "development": {

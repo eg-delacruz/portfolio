@@ -269,6 +269,17 @@ export const Certificates = () => {
     },
     {
       title: t(
+        `Page.certificates.certificates_info.backend.certificate_8.title`
+      ),
+      issue_date: t(
+        `Page.certificates.certificates_info.backend.certificate_8.date`
+      ),
+      issued_by: 'Platzi',
+      url: '/certificates/backend-nestjs.pdf',
+      blue_bg: true,
+    },
+    {
+      title: t(
         `Page.certificates.certificates_info.backend.certificate_3.title`
       ),
       issue_date: t(
