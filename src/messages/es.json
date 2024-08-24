@@ -185,6 +185,10 @@
           "certificate_8": {
             "title": "Backend con NestJS",
             "date": "22 Agosto 2024"
+          },
+          "certificate_9": {
+            "title": "NestJS: Programación Modular",
+            "date": "24 Agosto 2024"
           }
         },
         "development": {
