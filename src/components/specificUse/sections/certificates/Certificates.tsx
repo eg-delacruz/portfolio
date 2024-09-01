@@ -324,6 +324,16 @@ export const Certificates = () => {
     },
     {
       title: t(
+        `Page.certificates.certificates_info.backend.certificate_10.title`
+      ),
+      issue_date: t(
+        `Page.certificates.certificates_info.backend.certificate_10.date`
+      ),
+      issued_by: 'Platzi',
+      url: '/certificates/db-sql.pdf',
+    },
+    {
+      title: t(
         `Page.certificates.certificates_info.backend.certificate_6.title`
       ),
       issue_date: t(

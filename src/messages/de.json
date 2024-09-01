@@ -189,6 +189,10 @@
           "certificate_9": {
             "title": "NestJS: Modulare Programmierung",
             "date": "24. August 2024"
+          },
+          "certificate_10": {
+            "title": "Datenbanken mit SQL",
+            "date": "1. September 2024"
           }
         },
         "development": {
