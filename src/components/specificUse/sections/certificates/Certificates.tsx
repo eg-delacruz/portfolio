@@ -482,6 +482,16 @@ export const Certificates = () => {
     },
     {
       title: t(
+        `Page.certificates.certificates_info.development.certificate_14.title`
+      ),
+      issue_date: t(
+        `Page.certificates.certificates_info.development.certificate_14.date`
+      ),
+      issued_by: 'Platzi',
+      url: '/certificates/docker-fundamentos.pdf',
+    },
+    {
+      title: t(
         `Page.certificates.certificates_info.development.certificate_11.title`
       ),
       issue_date: t(
