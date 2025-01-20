@@ -24,6 +24,7 @@ import node_icon from '@assets/icons/skills/node.svg';
 import express_black_icon from '@assets/icons/skills/express_black.svg';
 import express_white_icon from '@assets/icons/skills/express_white.svg';
 import mongoose_icon from '@assets/icons/skills/mongoose.svg';
+import c_icon from '@assets/icons/skills/c.svg';
 import mongo_icon from '@assets/icons/skills/mongo.svg';
 import sql_icon from '@assets/icons/skills/sql.svg';
 import illustrator_icon from '@assets/icons/skills/illustrator.svg';
@@ -157,6 +158,12 @@ export const Skills = ({ translations }: Props) => {
                 <Image src={node_icon} alt='Node icon' />
               </div>
               <p>Node JS</p>
+            </div>
+            <div className={`${styles.skill_card}`}>
+              <div className={styles.skill_icon}>
+                <Image src={c_icon} alt='C language icon' />
+              </div>
+              <p>C</p>
             </div>
             <div className={styles.skill_card}>
               <div className={styles.skill_icon}>

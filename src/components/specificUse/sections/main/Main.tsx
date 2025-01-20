@@ -4,7 +4,7 @@ import Image from 'next/image';
 import styles from './Styles.module.scss';
 
 //Assets
-import profilePic from '@assets/images/Gerardo.jpg';
+import profilePic from '@assets/images/Gerardo_2.jpg';
 import GD_Logo from '@assets/images/Light yellow.svg';
 
 import CV_icon from '@assets/icons/CV_icon.svg';
@@ -103,15 +103,15 @@ export const Main = ({ locale, translations }: Props) => {
           </p>
           <div className={`${styles.buttons} ${styles.bg_blur}`}>
             {locale === 'en' ? (
-              <a href='/documents/CV_english.pdf' target='_blank'>
+              <a href='/documents/CV_Gerardo_De_La_Cruz_EN.pdf' target='_blank'>
                 <Image src={CV_icon} alt='CV icon' />
               </a>
             ) : locale === 'es' ? (
-              <a href='/documents/CV_español.pdf' target='_blank'>
+              <a href='/documents/CV_Gerardo_De_La_Cruz_ES.pdf' target='_blank'>
                 <Image src={CV_icon} alt='CV icon' />
               </a>
             ) : (
-              <a href='/documents/CV_deutsch.pdf' target='_blank'>
+              <a href='/documents/CV_Gerardo_De_La_Cruz_DE.pdf' target='_blank'>
                 <Image src={CV_icon} alt='CV icon' />
               </a>
             )}
