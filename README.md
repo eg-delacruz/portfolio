@@ -1,1 +1,1 @@
-#Lates node version: 20.10.0
+#Use with windows Powershell (avoid WSL/Linux)
