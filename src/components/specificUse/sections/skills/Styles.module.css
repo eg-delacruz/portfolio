@@ -3,7 +3,7 @@
 }
 .skills_container .skills_grid {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(10, 1fr);
   gap: 16px;
 }
 
@@ -58,6 +58,13 @@
 }
 
 /* MQ  */
+
+@media screen and (max-width: 940px) {
+  .skills_container .skills_grid {
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+
 @media screen and (max-width: 767px) {
   .skills_container .skills_grid {
     grid-template-columns: repeat(5, 1fr);
@@ -89,9 +96,9 @@
 }
 
 /* Dark theme */
-[data-theme="dark"] .skills_container .skill_card {
+[data-theme='dark'] .skills_container .skill_card {
   filter: none;
 }
-[data-theme="dark"] .skills_container .skill_icon {
+[data-theme='dark'] .skills_container .skill_icon {
   background: initial;
 }
