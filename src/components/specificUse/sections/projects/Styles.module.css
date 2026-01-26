@@ -1,12 +1,15 @@
 .projects_container .project_cards_container {
-  max-width: 530px;
-  margin: 0 auto;
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 80px;
+  column-gap: 40px;
 }
+
 .projects_container .project_card {
-  background-color: var(--primary-white);
+  background-color: var(--secondary-white);
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
 }
 .projects_container .project_image_container {
   position: relative;
@@ -22,8 +25,17 @@
   object-fit: cover;
   object-position: top;
 }
+.projects_container .project_info_container {
+  /* Flex 1 and direction column make the flex item grow vertically to fill remaining space  */
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
 .projects_container .project_info_details {
   padding: 16px 8px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 .projects_container .project_info_details h5 {
   margin-bottom: 8px;
@@ -32,6 +44,7 @@
   display: flex;
   justify-content: flex-end;
   gap: 8px;
+  margin-top: auto;
 }
 
 .projects_container .project_technologies {
@@ -58,6 +71,17 @@
 }
 .projects_container .hp_card {
   filter: drop-shadow(0px 0px 40px rgba(253, 197, 0, 0.5));
+}
+
+@media screen and (max-width: 1024px) {
+  .projects_container .project_cards_container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .projects_container .project_card {
+    max-width: 530px;
+    margin: 0 auto;
+  }
 }
 
 /* MQ */
