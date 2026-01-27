@@ -34,6 +34,11 @@ body {
   color: var(--pure-black);
 }
 
+/* Offset for fixed header when navigating to sections */
+.section {
+  scroll-margin-top: 70px;
+}
+
 h1,
 h2,
 h3,
@@ -138,6 +143,10 @@ p {
   .active_nav_link {
     background-color: initial;
     border-radius: initial;
+  }
+  /* Adjust scroll offset for mobile header height */
+  .section {
+    scroll-margin-top: 50px;
   }
 }
 
