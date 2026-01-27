@@ -36,6 +36,12 @@ import github_black_icon from '@assets/icons/skills/github_black.svg';
 import github_white_icon from '@assets/icons/skills/github_white.svg';
 import scrum_icon from '@assets/icons/skills/scrum.svg';
 import cypress_icon from '@assets/icons/skills/cypress.svg';
+import firebase_icon from '@assets/icons/skills/firebase.svg';
+import c_plus_plus_icon from '@assets/icons/skills/c_plus_plus.svg';
+import docker_icon from '@assets/icons/skills/docker.svg';
+import nginx_icon from '@assets/icons/skills/nginx.svg';
+import python_icon from '@assets/icons/skills/python.svg';
+import tailwind_icon from '@assets/icons/skills/tailwind.svg';
 
 type Props = {
   translations: {
@@ -108,6 +114,12 @@ export const Skills = ({ translations }: Props) => {
             </div>
             <div className={styles.skill_card}>
               <div className={styles.skill_icon}>
+                <Image src={tailwind_icon} alt='Tailwind CSS icon' />
+              </div>
+              <p>Tailwind</p>
+            </div>
+            <div className={styles.skill_card}>
+              <div className={styles.skill_icon}>
                 <Image src={sass_icon} alt='SASS icon' />
               </div>
               <p>SASS</p>
@@ -165,6 +177,18 @@ export const Skills = ({ translations }: Props) => {
               </div>
               <p>C</p>
             </div>
+            <div className={`${styles.skill_card}`}>
+              <div className={styles.skill_icon}>
+                <Image src={c_plus_plus_icon} alt='C++ language icon' />
+              </div>
+              <p>C++</p>
+            </div>
+            <div className={`${styles.skill_card}`}>
+              <div className={styles.skill_icon}>
+                <Image src={python_icon} alt='Python icon' />
+              </div>
+              <p>Python</p>
+            </div>
             <div className={styles.skill_card}>
               <div className={styles.skill_icon}>
                 <Image
@@ -189,6 +213,12 @@ export const Skills = ({ translations }: Props) => {
             </div>
             <div className={`${styles.skill_card}`}>
               <div className={styles.skill_icon}>
+                <Image src={nginx_icon} alt='Nginx icon' />
+              </div>
+              <p>Nginx</p>
+            </div>
+            <div className={`${styles.skill_card}`}>
+              <div className={styles.skill_icon}>
                 <Image
                   className='data-hide-on-theme-dark'
                   src={aws_black_icon}
@@ -202,6 +232,12 @@ export const Skills = ({ translations }: Props) => {
                 />
               </div>
               <p>AWS</p>
+            </div>
+            <div className={`${styles.skill_card}`}>
+              <div className={styles.skill_icon}>
+                <Image src={firebase_icon} alt='Firebase icon' />
+              </div>
+              <p>Firebase</p>
             </div>
           </div>
         </div>
@@ -277,6 +313,12 @@ export const Skills = ({ translations }: Props) => {
                 />
               </div>
               <p>GitHub</p>
+            </div>
+            <div className={styles.skill_card}>
+              <div className={styles.skill_icon}>
+                <Image src={docker_icon} alt='Docker icon' />
+              </div>
+              <p>Docker</p>
             </div>
             <div className={styles.skill_card}>
               <div className={styles.skill_icon}>

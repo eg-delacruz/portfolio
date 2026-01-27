@@ -21,8 +21,8 @@ import mongo_icon from '@assets/icons/skills/mongo.svg';
 import figma_icon from '@assets/icons/skills/figma.svg';
 import git_icon from '@assets/icons/skills/git.svg';
 import github_black_icon from '@assets/icons/skills/github_black.svg';
-import firebase_icon from '@assets/icons/skills/firebase_icon.svg';
-import tailwind_icon from '@assets/icons/skills/tailwind_icon.svg';
+import firebase_icon from '@assets/icons/skills/firebase.svg';
+import tailwind_icon from '@assets/icons/skills/tailwind.svg';
 
 import projects_icon from '@assets/icons/portfolio_icon.svg';
 import scheduler from '@assets/images/scheduler.png';
