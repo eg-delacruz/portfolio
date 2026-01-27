@@ -101,12 +101,13 @@
   .header_open {
     left: 0;
   }
-  .header_container {
+  .header .header_container {
     height: 100vh;
     flex-direction: column;
     justify-content: start;
     row-gap: 40px;
     width: 100%;
+    padding: 90px 8px;
   }
   .menu {
     height: initial;
@@ -115,7 +116,6 @@
   .menu ul {
     flex-direction: column;
     row-gap: 24px;
-    margin-top: 40px;
     width: 100%;
   }
   .menu li {
@@ -139,10 +139,10 @@
   }
 
   /* Dark theme  */
-  [data-theme="dark"] .header {
+  [data-theme='dark'] .header {
     background: rgb(36, 40, 61, 0.7);
   }
-  [data-theme="dark"] .menu a {
+  [data-theme='dark'] .menu a {
     color: var(--primary-white);
   }
 }
