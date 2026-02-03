@@ -23,13 +23,14 @@ import git_icon from '@assets/icons/skills/git.svg';
 import github_black_icon from '@assets/icons/skills/github_black.svg';
 import firebase_icon from '@assets/icons/skills/firebase.svg';
 import tailwind_icon from '@assets/icons/skills/tailwind.svg';
-
 import projects_icon from '@assets/icons/portfolio_icon.svg';
 import scheduler from '@assets/images/scheduler.png';
 import campuscanvas_web from '@assets/images/campuscanvas_web.png';
 import campuscanvas_node_server from '@assets/images/campuscanvas_node_server.png';
 import petgram from '@assets/images/petgram.png';
 import hp from '@assets/images/harry_potter.png';
+
+import { MoreProjectsCarrousel } from '@components/specificUse/MoreProjectsCarrousel/MoreProjectsCarrousel';
 
 type Props = {
   translations: {
@@ -288,6 +289,11 @@ export const Projects = ({ translations }: Props) => {
             </div>
           </article>
         </div>
+
+        {/* #MARK: Other projects */}
+        {/* <div className={styles.more_projects_carrousel_container}>
+          <MoreProjectsCarrousel />
+        </div> */}
       </div>
     </section>
   );
